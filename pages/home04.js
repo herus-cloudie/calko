@@ -17,12 +17,10 @@ export default function Home4() {
                 <Slider4 />
                 <FlatExplore4 />
                 <FlatDiscover4 />
-                {/* <FlatSearchToday4 /> */}
                 <FlatSale4 />
                 <FlatWhyChoose4 />
                 <FlatContact4 />
                 <FlatBrand4 />
-                {/* <FlatMeet4 /> */}
                 <FlatBlog4 />
             </Layout>
         </>

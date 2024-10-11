@@ -77,21 +77,17 @@ export default function FlatDiscover4() {
                                 </ul>
                             </div>
                             <div className="swiper-container2">
-                                <Swiper {...swiperOptions} className="one-carousel">
+                                <Swiper dir='rtl' {...swiperOptions} className="one-carousel">
                                     <SwiperSlide className="slide-item">
                                         <div className="box box-dream hv-one">
                                             <div className="image-group relative ">
-                                                <span className="featured fs-12 fw-6">Featured</span>
-                                                <span className="featured style fs-12 fw-6">For sale</span>
+                                                <span className="featured fs-12 fw-6">ویژه</span>
+                                                <span className="featured style fs-12 fw-6">منتخب</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
+                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/immmg/s1.png" alt="images" /></Link>
                                                     <div className="swiper-wrapper ">
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-21.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-2.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-3.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-4.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-5.jpg" alt="images" /></div>
+                                                        <div className="swiper-slide"><img src="/assets/immmg/s1.png" alt="images" /></div>
                                                     </div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
                                                     <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
@@ -99,18 +95,16 @@ export default function FlatDiscover4() {
                                                 </div>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
-                                                <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
-                                                <div className="icon-box flex">
-                                                    <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
-                                                    <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
-                                                    <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
+                                                <h3 className="link-style-1"><Link href="/property-detail-v1">شیلا</Link> </h3>
+                                                <div dir='ltr' className="text-address" style={{display : 'flex' , gap : '5px' , flexDirection : 'row-reverse'}}><p className="p-12 ">تهران</p></div>
+                                                
+                                                <div className="icon-box flex" style={{justifyContent : 'space-between'}}>
+                                                    <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">15 درصد تخفیف</Link></div>
+                                                    <span>رستوران</span>
                                                 </div>
                                                 <div className="days-box flex justify-space align-center">
-                                                    <Link className="compare flex align-center fw-6" href="#">Compare</Link>
-                                                    <div className="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="/assets/images/author/author-1.jpg" alt="images" /></div>
-                                                    <div className="days">3 years ago</div>
+                                                    <Link className=" flex align-center fw-6" href="#">بسته</Link>
+                                                    <div className="days">021-44144000</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -118,36 +112,84 @@ export default function FlatDiscover4() {
                                     <SwiperSlide className="slide-item">
                                         <div className="box box-dream hv-one">
                                             <div className="image-group relative ">
-                                                <span className="featured fs-12 fw-6">Featured</span>
-                                                <span className="featured style fs-12 fw-6">For sale</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
                                                     <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-wrapper ">
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-22.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-12.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-13.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-14.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-15.jpg" alt="images" /></div>
-                                                    </div>
+                                                    <div className="swiper-slide"><img src="/assets/immmg/s6.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
                                                     <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
                                                     <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
                                                 </div>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
-                                                <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
-                                                <div className="icon-box flex">
-                                                    <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
-                                                    <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
-                                                    <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
+                                                <h3 className="link-style-1"><Link href="/property-detail-v1">فرش بهشتی</Link> </h3>
+                                                <div dir='ltr' className="text-address" style={{display : 'flex' , gap : '5px' , flexDirection : 'row-reverse'}}><p className="p-12 ">تهران</p></div>
+                                                
+                                                <div className="icon-box flex" style={{justifyContent : 'space-between'}}>
+                                                    <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">5 درصد تخفیف</Link></div>
+                                                    <span>فرش</span>
                                                 </div>
                                                 <div className="days-box flex justify-space align-center">
-                                                    <Link className="compare flex align-center fw-6" href="#">Compare</Link>
-                                                    <div className="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="/assets/images/author/author-2.jpg" alt="images" /></div>
-                                                    <div className="days">3 years ago</div>
+                                                    <Link className=" flex align-center fw-6" href="#">باز</Link>
+                                                    <div className="days">021-44144000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    
+                                    <SwiperSlide className="slide-item">
+                                        <div className="box box-dream hv-one">
+                                            <div className="image-group relative ">
+
+                                                <span className="featured style fs-12 fw-6">منتخب</span>
+                                                <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
+                                                <div className="swiper-container noo carousel-2 img-style h-100">
+                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
+                                                    <div className="swiper-slide"><img src="/assets/immmg/s3.png" alt="images" /></div>
+                                                    <div className="pagi2"><div className="swiper-pagination2"></div> </div>
+                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
+                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
+                                                </div>
+                                            </div>
+                                            <div className="content">
+                                                <h3 className="link-style-1"><Link href="/property-detail-v1">پزشکت</Link> </h3>
+                                                <div dir='ltr' className="text-address" style={{display : 'flex' , gap : '5px' , flexDirection : 'row-reverse'}}><p className="p-12 ">تهران</p></div>
+                                                
+                                                <div className="icon-box flex" style={{justifyContent : 'space-between'}}>
+                                                    <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">7 درصد تخفیف</Link></div>
+                                                    <span>بیمارستان و پزشکی</span>
+                                                </div>
+                                                <div className="days-box flex justify-space align-center">
+                                                    <Link className=" flex align-center fw-6" href="#">باز</Link>
+                                                    <div className="days">021-44144000</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </SwiperSlide>
+                                    <SwiperSlide className="slide-item">
+                                        <div className="box box-dream hv-one">
+                                            <div className="image-group relative "> 
+                                                <span className="featured fs-12 fw-6">ویژه</span>
+                                                <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
+                                                <div className="swiper-container noo carousel-2 img-style h-100">
+                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
+                                                    <div className="swiper-slide"><img src="/assets/immmg/s2.png" alt="images" /></div>
+                                                    <div className="pagi2"><div className="swiper-pagination2"></div> </div>
+                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
+                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
+                                                </div>
+                                            </div>
+                                            <div className="content">
+                                                <h3 className="link-style-1"><Link href="/property-detail-v1">آجیل دستچی</Link> </h3>
+                                                <div dir='ltr' className="text-address" style={{display : 'flex' , gap : '5px' , flexDirection : 'row-reverse'}}><p className="p-12 ">البرز</p></div>
+                                                
+                                                <div className="icon-box flex" style={{justifyContent : 'space-between'}}>
+                                                    <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">18 درصد تخفیف</Link></div>
+                                                    <span>خوراک</span>
+                                                </div>
+                                                <div className="days-box flex justify-space align-center">
+                                                    <Link className=" flex align-center fw-6" href="#">بسته</Link>
+                                                    <div className="days">021-44144000</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -155,188 +197,61 @@ export default function FlatDiscover4() {
                                     <SwiperSlide className="slide-item">
                                         <div className="box box-dream hv-one">
                                             <div className="image-group relative ">
-                                                <span className="featured fs-12 fw-6">Featured</span>
-                                                <span className="featured style fs-12 fw-6">For sale</span>
+                                                <span className="featured fs-12 fw-6">ویژه</span>
+                                                <span className="featured style fs-12 fw-6">منتخب</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
                                                     <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-wrapper ">
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-23.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-7.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-8.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-9.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-5.jpg" alt="images" /></div>
-                                                    </div>
+                                                    <div className="swiper-slide"><img src="/assets/immmg/s8.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
                                                     <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
                                                     <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
                                                 </div>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
-                                                <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
-                                                <div className="icon-box flex">
-                                                    <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
-                                                    <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
-                                                    <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
+                                                <h3 className="link-style-1"><Link href="/property-detail-v1">مبلمان نیکرادان</Link> </h3>
+                                                <div dir='ltr' className="text-address" style={{display : 'flex' , gap : '5px' , flexDirection : 'row-reverse'}}><p className="p-12 ">تهران</p></div>
+                                                
+                                                <div className="icon-box flex" style={{justifyContent : 'space-between'}}>
+                                                    <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">26 درصد تخفیف</Link></div>
+                                                    <span>لوازم خانگی</span>
                                                 </div>
                                                 <div className="days-box flex justify-space align-center">
-                                                    <Link className="compare flex align-center fw-6" href="#">Compare</Link>
-                                                    <div className="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="/assets/images/author/author-3.jpg" alt="images" /></div>
-                                                    <div className="days">3 years ago</div>
+                                                    <Link className=" flex align-center fw-6" href="#">بسته</Link>
+                                                    <div className="days">021-44144000</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide className="slide-item ">
+                                    <SwiperSlide className="slide-item">
                                         <div className="box box-dream hv-one">
                                             <div className="image-group relative ">
-                                                <span className="featured fs-12 fw-6">Featured</span>
-                                                <span className="featured style fs-12 fw-6">For sale</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
                                                     <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-wrapper ">
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-21.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-2.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-3.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-4.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-5.jpg" alt="images" /></div>
-                                                    </div>
+                                                    <div className="swiper-slide"><img src="/assets/immmg/s5.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
                                                     <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
                                                     <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
                                                 </div>
                                             </div>
                                             <div className="content">
-                                                <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
-                                                <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
-                                                <div className="icon-box flex">
-                                                    <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
-                                                    <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
-                                                    <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
+                                                <h3 className="link-style-1"><Link href="/property-detail-v1">بهراد طب بیدار</Link> </h3>
+                                                <div dir='ltr' className="text-address" style={{display : 'flex' , gap : '5px' , flexDirection : 'row-reverse'}}><p className="p-12 ">تهران</p></div>
+                                                
+                                                <div className="icon-box flex" style={{justifyContent : 'space-between'}}>
+                                                    <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">15 درصد تخفیف</Link></div>
+                                                    <span>رستوران</span>
                                                 </div>
                                                 <div className="days-box flex justify-space align-center">
-                                                    <Link className="compare flex align-center fw-6" href="#">Compare</Link>
-                                                    <div className="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="/assets/images/author/author-4.jpg" alt="images" /></div>
-                                                    <div className="days">3 years ago</div>
+                                                    <Link className=" flex align-center fw-6" href="#">بسته</Link>
+                                                    <div className="days">021-44144000</div>
                                                 </div>
                                             </div>
                                         </div>
                                     </SwiperSlide>
-                                    <SwiperSlide className="slide-item ">
-                                        <div className="box box-dream hv-one">
-                                            <div className="image-group relative ">
-                                                <span className="featured fs-12 fw-6">Featured</span>
-                                                <span className="featured style fs-12 fw-6">For sale</span>
-                                                <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
-                                                <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-wrapper ">
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-22.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-12.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-13.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-14.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-15.jpg" alt="images" /></div>
-                                                    </div>
-                                                    <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
-                                                </div>
-                                            </div>
-                                            <div className="content">
-                                                <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
-                                                <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
-                                                <div className="icon-box flex">
-                                                    <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
-                                                    <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
-                                                    <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
-                                                </div>
-                                                <div className="days-box flex justify-space align-center">
-                                                    <Link className="compare flex align-center fw-6" href="#">Compare</Link>
-                                                    <div className="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="/assets/images/author/author-5.jpg" alt="images" /></div>
-                                                    <div className="days">3 years ago</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide className="slide-item ">
-                                        <div className="box box-dream hv-one">
-                                            <div className="image-group relative ">
-                                                <span className="featured fs-12 fw-6">Featured</span>
-                                                <span className="featured style fs-12 fw-6">For sale</span>
-                                                <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
-                                                <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-wrapper ">
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-23.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-2.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-3.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-4.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-5.jpg" alt="images" /></div>
-                                                    </div>
-                                                    <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
-                                                </div>
-                                            </div>
-                                            <div className="content">
-                                                <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
-                                                <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
-                                                <div className="icon-box flex">
-                                                    <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
-                                                    <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
-                                                    <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
-                                                </div>
-                                                <div className="days-box flex justify-space align-center">
-                                                    <Link className="compare flex align-center fw-6" href="#">Compare</Link>
-                                                    <div className="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="/assets/images/author/author-6.jpg" alt="images" /></div>
-                                                    <div className="days">3 years ago</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
-                                    <SwiperSlide className="slide-item ">
-                                        <div className="box box-dream hv-one">
-                                            <div className="image-group relative ">
-                                                <span className="featured fs-12 fw-6">Featured</span>
-                                                <span className="featured style fs-12 fw-6">For sale</span>
-                                                <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
-                                                <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-wrapper ">
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-21.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-22.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-10.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-14.jpg" alt="images" /></div>
-                                                        <div className="swiper-slide"><img src="/assets/images/house/featured-15.jpg" alt="images" /></div>
-                                                    </div>
-                                                    <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
-                                                </div>
-                                            </div>
-                                            <div className="content">
-                                                <h3 className="link-style-1"><Link href="/property-detail-v1">Gorgeous Apartment Building</Link> </h3>
-                                                <div className="text-address"><p className="p-12">58 Hullbrook Road, Billesley, B13 0LA</p></div>
-                                                <div className="money fs-18 fw-6 text-color-3"><Link href="/property-detail-v1">$7,500</Link></div>
-                                                <div className="icon-box flex">
-                                                    <div className="icons icon-1 flex"><span>Beds: </span><span className="fw-6">4</span></div>
-                                                    <div className="icons icon-2 flex"><span>Baths: </span><span className="fw-6">2</span></div>
-                                                    <div className="icons icon-3 flex"><span>Sqft: </span><span className="fw-6">1150</span></div>
-                                                </div>
-                                                <div className="days-box flex justify-space align-center">
-                                                    <Link className="compare flex align-center fw-6" href="#">Compare</Link>
-                                                    <div className="img-author hv-tool" data-tooltip="Kathryn Murphy"><img src="/assets/images/author/author-7.jpg" alt="images" /></div>
-                                                    <div className="days">3 years ago</div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </SwiperSlide>
+
+                                    
                                 </Swiper>
                             </div>
                         </div>
