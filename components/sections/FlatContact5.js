@@ -3,18 +3,14 @@ import Link from "next/link";
 export default function FlatContact5() {
   return (
     <>
-      <section className="flat-contact tf-section home5 relative">
+      <section dir="rtl" className="flat-contact tf-section home5 relative">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
               <div className="heading-section">
-                <h2 className="font-2 fw-8 text-color-1">
-                  We provide the most suitable and quality real estate.
+                <h2 className=" fw-8 ">
+                  برای همکاری با کالکو فقط لازمه این فرم رو پر کنید
                 </h2>
-                <p className="text-color-1">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce
-                  sed tristique metus proin id lorem odio
-                </p>
               </div>
               <div className="wrap-info">
                 <div className="box-info flex align-center">
@@ -47,9 +43,9 @@ export default function FlatContact5() {
                     </svg>
                   </div>
                   <div className="content">
-                    <h5 className="text-color-1">Office address</h5>
-                    <h4 className="fw-4 text-color-1">
-                      2715 Ash Dr. San Jose, South Dakota 83475
+                    <h5 className="">آدرس شرکت</h5>
+                    <h4 className="fw-4 ">
+                      تهران، خیابان مریم شرقی، پلاک 5
                     </h4>
                   </div>
                 </div>
@@ -93,10 +89,10 @@ export default function FlatContact5() {
                     </svg>
                   </div>
                   <div className="content">
-                    <h5 className="text-color-1">Request a call back</h5>
+                    <h5 className="">شماره تماس</h5>
                     <Link href="/tel:0123456789">
-                      <h4 className="fw-7 fs-30 text-color-1 lh-45">
-                        314-555-0123
+                      <h4 className="fw-7 fs-30  lh-45">
+                        021-44144000
                       </h4>
                     </Link>
                   </div>
@@ -168,10 +164,10 @@ export default function FlatContact5() {
                     </svg>
                   </div>
                   <div className="content">
-                    <h5 className="text-color-1">Email us</h5>
+                    <h5 className="">ایمیل</h5>
                     <Link href="/mailto:hellosupport@gmail.com">
-                      <h4 className="fw-4 text-color-1">
-                        hellosupport@gmail.com
+                      <h4 className="fw-4 ">
+                        holding-saad@gmail.com
                       </h4>
                     </Link>
                   </div>
@@ -182,8 +178,8 @@ export default function FlatContact5() {
               <div className="wrap-contact">
                 <div className="box-title flex justify-space">
                   <div className="inner">
-                    <div className="title-ct fs-30 fw-7">Contact us </div>
-                    <p>We will respond as soon as we receive your message.</p>
+                    <div className="title-ct fs-30 fw-7">ارتباط با ما </div>
+                    <p>کارشناسان ما در سریع ترین زمان ممکن پاسخگو خواهند بود</p>
                   </div>
                   <div className="icon-message animate-zoom">
                     <svg
@@ -215,7 +211,7 @@ export default function FlatContact5() {
                       noValidate="novalidate"
                     >
                       <fieldset className="name-wrap">
-                        <label className="font-2 fw-8 fs-16">Your name</label>
+                        <label className=" fw-8 fs-16">نام کامل</label>
                         <input
                           type="text"
                           className="tb-my-input"
@@ -231,7 +227,7 @@ export default function FlatContact5() {
                       </fieldset>
                       <div className="text-wrap flex">
                         <fieldset className="email-wrap style-text">
-                          <label className="font-2 fw-8 fs-16">Email</label>
+                          <label className=" fw-8 fs-16">ایمیل</label>
                           <input
                             type="email"
                             className="tb-my-input"
@@ -246,7 +242,7 @@ export default function FlatContact5() {
                           />
                         </fieldset>
                         <fieldset className="phone-wrap style-text">
-                          <label className="font-2 fw-8 fs-16">Phone</label>
+                          <label className=" fw-8 fs-16">شماره تماس</label>
                           <input
                             type="tel"
                             className="tb-my-input"
@@ -262,24 +258,24 @@ export default function FlatContact5() {
                         </fieldset>
                       </div>
                       <div className="wd-find-select">
-                        <label className="font-2 fw-8 fs-16">
-                          Property type
+                        <label className=" fw-8 fs-16">
+                          دسته بندی
                         </label>
                         <div className="select-wrapper style-2">
                           <select className="nice-select relative" tabIndex={0}>
                             <span className="current">Choose</span>
 
                             <option value className="option selected">
-                              Choose
+                              دسته بندی
                             </option>
                             <option value="apartment" className="option">
-                              Apartment
+                              صنعت بیمه
                             </option>
                             <option value="house" className="option">
-                              House
+                              تفریحات
                             </option>
                             <option value="rent" className="option">
-                              Rent
+                              لوازم خانگی
                             </option>
 
                             <img
@@ -291,7 +287,7 @@ export default function FlatContact5() {
                         </div>
                       </div>
                       <fieldset className="message-wrap">
-                        <label className="font-2 fw-8 fs-16">Message</label>
+                        <label className=" fw-8 fs-16">متن پیام</label>
                         <textarea
                           id="comment-message"
                           name="message"
@@ -301,8 +297,10 @@ export default function FlatContact5() {
                           aria-required="true"
                         />
                       </fieldset>
-                      <div className="button-boxs">
+                      <div style={{fontFamily : 'yekan !important'}} className="button-boxs">
                         <button
+                        dir="ltr"
+                        
                           className="sc-button btn-icon"
                           name="submit"
                           type="submit"
@@ -331,7 +329,7 @@ export default function FlatContact5() {
                               </clipPath>
                             </defs>
                           </svg>
-                          <span>Send request</span>
+                          <span>ارسال درخواست</span>
                         </button>
                       </div>
                     </form>

@@ -973,9 +973,7 @@
 .hide-response{
   margin-bottom: 40px;
 }
-.flat-bt-top{
-  display: none !important;
-} 
+
 @media (max-width : 768px) {
   .hide-response{
     display: none;
@@ -1224,6 +1222,7 @@
 .sc-button span {
   color: #fff;
   font-weight: 700;
+  font-family: 'yekan';
   font-size: 15px;
   position: relative;
   -webkit-transition: all 0.3s ease;
@@ -2081,13 +2080,13 @@
 .flat-contact.home5 .heading-section {
   margin-bottom: 50px;
   padding-top: 63px;
-  padding-right: 0;
+  padding-left: 0;
 }
 .flat-contact.home5 .box-info {
-  padding-right: 180px;
+  padding-left: 180px;
 }
 .flat-contact.home5 .box-info .icon-info {
-  margin-right: 48px;
+  margin-left: 48px;
 }
 .flat-contact.home5 .box-info .icon-info::after {
   margin-left: 21px;
