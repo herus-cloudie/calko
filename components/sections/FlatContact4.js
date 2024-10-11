@@ -9,6 +9,9 @@ export default function FlatContact4() {
                 <div className="container">
                     <div className="row">
                         <div className="col-lg-12">
+                            <div className="mark-img">
+                                <img width={450} src="/assets/immmg/Picture18.png" alt="images" />
+                            </div>
                             <div className="heading-section dynamic-dir">
                                 <h2 className='dynamic-dir'>در همه مراحل کارشناسان ما با دقت کافی و همچنین بررسی کامل کسب و کار یا سازمان شما، هوشمندانه ترین راه حل را پیشنهاد میدهند</h2>
                                 <div className="button-footer">
@@ -20,9 +23,7 @@ export default function FlatContact4() {
                                     </Link>
                                 </div>
                             </div>
-                            <div className="mark-img">
-                                <img width={450} src="/assets/immmg/Picture18.png" alt="images" />
-                            </div>
+                            
                         </div>
                     </div>
                 </div>

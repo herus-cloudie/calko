@@ -4,6 +4,7 @@ import FlatBrand4 from "@/components/sections/FlatBrand4"
 import FlatContact4 from "@/components/sections/FlatContact4"
 import FlatDiscover4 from "@/components/sections/FlatDiscover4"
 import FlatExplore4 from "@/components/sections/FlatExplore4"
+import FlatIcon5 from "@/components/sections/FlatIcon5"
 import FlatMeet4 from "@/components/sections/FlatMeet4"
 import FlatSale4 from "@/components/sections/FlatSale4"
 import FlatSearchToday4 from "@/components/sections/FlatSearchToday4"
@@ -17,10 +18,12 @@ export default function Home() {
                 <Slider4 />
                 <FlatExplore4 />
                 <FlatDiscover4 />
+                <FlatIcon5 />
                 <FlatSale4 />
+                
                 <FlatWhyChoose4 />
-                <FlatContact4 />
                 <FlatBrand4 />
+                <FlatContact4 />
                 <FlatBlog4 />
             </Layout>
         </>

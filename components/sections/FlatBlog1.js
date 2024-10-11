@@ -10,8 +10,8 @@ export default function FlatBlog1() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="heading-section center">
-                                <h2>Form our blog</h2>
-                                <p className="text-color-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed tristique metus proin id lorem odio</p>
+                                <h2>مقالات و اخبار کالکو</h2>
+                                <p className="text-color-4">اخبار روزانه کالکو رو از این بخش دنبال کتید</p>
                             </div>
                         </div>
                         <div className="col-lg-4 col-md-4">

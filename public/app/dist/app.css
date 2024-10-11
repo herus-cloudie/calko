@@ -3250,7 +3250,7 @@
 }
 
 .flat-icon {
-  background-image: url(./../../assets/images/section/bg-icon.jpg);
+  background-image: url(./../../assets/immmg/bg-icon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 101px 55px 63px 0px;
@@ -6392,7 +6392,7 @@
   padding-left: 20px;
 }
 .slider.home4 {
-  background-image: url(./../../assets/images/slider/bg-slider-4.jpg);
+  background-image: url(./../../assets/immmg/top.png);
   background-attachment: fixed;
 }
 .slider.home4 .heading {
