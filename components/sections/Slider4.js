@@ -133,10 +133,9 @@ export default function Slider4() {
                                         </div>
                                     </div>
                                     <div className="wrap-icon flex align-center justify-center link-style-3">
-                                        <div className="icon-box fs-13"><span className="icons-house icon-house-1" /><Link href="#">Houses</Link></div>
-                                        <div className="icon-box fs-13"><span className="icons-house icon-house-2" /><Link href="#">Villa</Link></div>
-                                        <div className="icon-box fs-13"><span className="icons-house icon-house-3" /><Link href="#">Office</Link></div>
-                                        <div className="icon-box fs-13"><span className="icons-house icon-house-4" /><Link href="#">Apartments</Link></div>
+                                        <div className="icon-box fs-13"><Link href="#">تخفیف#</Link></div>
+                                        <div className="icon-box fs-13"><Link href="#">همکاری#</Link></div>
+                                        <div className="icon-box fs-13"><Link href="#">فروش#</Link></div>
                                     </div>
                                 </div>
                             </div >

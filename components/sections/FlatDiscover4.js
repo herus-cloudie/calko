@@ -1,6 +1,7 @@
 
 
 import Link from 'next/link';
+import { useState } from 'react';
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -38,6 +39,11 @@ const swiperOptions = {
 };
 
 export default function FlatDiscover4() {
+    const [activeIndex, setActiveIndex] = useState(1);
+    const handleOnClick = (index) => {
+        setActiveIndex(index);
+    };
+
     return (
         <>
             <section className="flat-discover wg-dream home4">
@@ -45,8 +51,30 @@ export default function FlatDiscover4() {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="heading-section center">
-                                <h2>Discover the latest real estate</h2>
-                                <p className="text-color-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo</p>
+                                <h2>شماری از کسب و کارهای منتخب</h2>
+                                <p className="text-color-4">کالکو سعی داره همواره با کسب و کار و سازمان های برجسته با عملکرد برتر، همکاری کند</p>
+                            </div>
+                            <div className="flat-tab taabs center hide-response">
+                                <ul className="menu-tab tab-title flex justify-center">
+                                    <li className={activeIndex == 1 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="کسب و کار 8 " onClick={() => handleOnClick(1)}>
+                                        <h5 className="inner">دسته بندی ها</h5>
+                                    </li>
+                                    <li className={activeIndex == 2 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="کسب و کار 6 " onClick={() => handleOnClick(2)}>
+                                        <h5 className="inner">پزشکی درمانی</h5>
+                                    </li>
+                                    <li className={activeIndex == 3 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="کسب و کار 5 " onClick={() => handleOnClick(3)}>
+                                        <h5 className="inner ">کالا و سوپرمارکت</h5>
+                                    </li>
+                                    <li className={activeIndex == 4 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="کسب و کار 7 " onClick={() => handleOnClick(4)}>
+                                        <h5 className="inner"> خدمات سفر </h5>
+                                    </li>
+                                    <li className={activeIndex == 5 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="کسب و کار 6 " onClick={() => handleOnClick(5)}>
+                                        <h5 className="inner">رسانه و آموزش</h5>
+                                    </li>
+                                    <li className={activeIndex == 6 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="کسب و کار 3 " onClick={() => handleOnClick(6)}>
+                                        <h5 className="inner"> پوشاک و لوازم منزل </h5>
+                                    </li>
+                                </ul>
                             </div>
                             <div className="swiper-container2">
                                 <Swiper {...swiperOptions} className="one-carousel">
