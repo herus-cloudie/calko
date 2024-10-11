@@ -12,7 +12,7 @@ export default function FlatWhyChoose4() {
                         <div className="col-lg-6 col-md-5">
                             <div className="images">
                                 <img src="/assets/immmg/why-choose-home4.png" alt="images" />
-                                <div className="curved-group home4 ">
+                                <div dir='ltr' className="curved-group home4 ">
                                 <div className="curved-text animate-rotate">
                                         <ReactCurvedText width='150'
                                             height='150'
