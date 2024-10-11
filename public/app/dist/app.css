@@ -338,7 +338,14 @@
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
-
+.header-dir{
+  direction: ltr;
+}
+@media (min-width : 991px) {
+  .header-dir{
+    direction: rtl;
+  }
+}
 .main-header .main-menu .navigation > li > a {
   position: relative;
   display: block;
@@ -6381,7 +6388,7 @@
 }
 .slider.home4 .heading h1 {
   margin-bottom: 20px;
-  padding-right: 30px;
+  padding-right: 0px;
 }
 .slider.home4 .flat-tabs {
   padding-left: 5px;

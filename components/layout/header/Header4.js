@@ -6,7 +6,7 @@ export default function Header4({ scroll, isMobileMenu, handleMobileMenu }) {
 
     return (
         <>
-            <header  dir="rtl" id="header" className={`main-header header header-fixed ${scroll ? "is-fixed is-small" : ""}`}>
+            <header id="header" className={`main-header header-dir header header-fixed ${scroll ? "is-fixed is-small" : ""}`}>
                 {/* Header Lower */}
                 <div className="header-lower">
                     <div className="container6">

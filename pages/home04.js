@@ -22,7 +22,7 @@ export default function Home4() {
                 <FlatWhyChoose4 />
                 <FlatContact4 />
                 <FlatBrand4 />
-                <FlatMeet4 />
+                {/* <FlatMeet4 /> */}
                 <FlatBlog4 />
             </Layout>
         </>
