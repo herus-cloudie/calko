@@ -85,13 +85,10 @@ export default function FlatDiscover4() {
                                                 <span className="featured style fs-12 fw-6">منتخب</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/immmg/s1.png" alt="images" /></Link>
                                                     <div className="swiper-wrapper ">
                                                         <div className="swiper-slide"><img src="/assets/immmg/s1.png" alt="images" /></div>
                                                     </div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -114,11 +111,9 @@ export default function FlatDiscover4() {
                                             <div className="image-group relative ">
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-slide"><img src="/assets/immmg/s6.png" alt="images" /></div>
+                                                        <div className="swiper-slide"><img src="/assets/immmg/s6.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -144,11 +139,9 @@ export default function FlatDiscover4() {
                                                 <span className="featured style fs-12 fw-6">منتخب</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-slide"><img src="/assets/immmg/s3.png" alt="images" /></div>
+                                                        <div className="swiper-slide"><img src="/assets/immmg/s3.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -172,11 +165,9 @@ export default function FlatDiscover4() {
                                                 <span className="featured fs-12 fw-6">ویژه</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-slide"><img src="/assets/immmg/s2.png" alt="images" /></div>
+                                                        <div className="swiper-slide"><img src="/assets/immmg/s2.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -201,11 +192,9 @@ export default function FlatDiscover4() {
                                                 <span className="featured style fs-12 fw-6">منتخب</span>
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-slide"><img src="/assets/immmg/s8.png" alt="images" /></div>
+                                                        <div className="swiper-slide"><img src="/assets/immmg/s8.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="content">
@@ -228,11 +217,9 @@ export default function FlatDiscover4() {
                                             <div className="image-group relative ">
                                                 <span className="icon-bookmark"><i className="far fa-bookmark" /></span>
                                                 <div className="swiper-container noo carousel-2 img-style h-100">
-                                                    <Link href="/property-detail-v1" className="icon-plus"><img src="/assets/images/icon/plus.svg" alt="images" /></Link>
-                                                    <div className="swiper-slide"><img src="/assets/immmg/s5.png" alt="images" /></div>
+                                                        <div className="swiper-slide"><img src="/assets/immmg/s5.png" alt="images" /></div>
                                                     <div className="pagi2"><div className="swiper-pagination2"></div> </div>
-                                                    <div className="swiper-button-next2 "><i className="fal fa-arrow-right" /></div>
-                                                    <div className="swiper-button-prev2 "><i className="fal fa-arrow-left" /> </div>
+                                                    
                                                 </div>
                                             </div>
                                             <div className="content">
