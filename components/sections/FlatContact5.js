@@ -8,7 +8,7 @@ export default function FlatContact5() {
           <div className="row">
             <div className="col-lg-6">
               <div className="heading-section">
-                <h2 className=" fw-8 ">
+                <h2 className=" fw-8 text-color-1">
                   برای همکاری با کالکو فقط لازمه این فرم رو پر کنید
                 </h2>
               </div>
@@ -43,8 +43,8 @@ export default function FlatContact5() {
                     </svg>
                   </div>
                   <div className="content">
-                    <h5 className="">آدرس شرکت</h5>
-                    <h4 className="fw-4 ">
+                    <h5 className="text-color-1">آدرس شرکت</h5>
+                    <h4 className="fw-4 text-color-1">
                       تهران، خیابان مریم شرقی، پلاک 5
                     </h4>
                   </div>
@@ -89,9 +89,9 @@ export default function FlatContact5() {
                     </svg>
                   </div>
                   <div className="content">
-                    <h5 className="">شماره تماس</h5>
+                    <h5 className=" text-color-1">شماره تماس</h5>
                     <Link href="/tel:0123456789">
-                      <h4 className="fw-7 fs-30  lh-45">
+                      <h4 className="fw-7 fs-30  lh-45 text-color-1">
                         021-44144000
                       </h4>
                     </Link>
@@ -164,9 +164,9 @@ export default function FlatContact5() {
                     </svg>
                   </div>
                   <div className="content">
-                    <h5 className="">ایمیل</h5>
+                    <h5 className="text-color-1">ایمیل</h5>
                     <Link href="/mailto:hellosupport@gmail.com">
-                      <h4 className="fw-4 ">
+                      <h4 className="fw-4 text-color-1">
                         holding-saad@gmail.com
                       </h4>
                     </Link>
