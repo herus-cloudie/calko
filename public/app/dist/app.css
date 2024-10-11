@@ -3248,6 +3248,10 @@
 .flat-why-choose2 .wrap-icon .box .content p {
   margin-bottom: 10px;
 }
+.ali::placeholder {
+
+  font-family: 'yekan' !important;
+}
 
 .flat-icon {
   background-image: url(./../../assets/immmg/bg-icon.jpg);

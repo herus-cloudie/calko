@@ -41,7 +41,7 @@ export default function Slider4() {
                                                     <form method="post">
                                                         <div className="wd-find-select">
                                                             <div className="form-group form-group-1 search-form ">
-                                                                <input type="search" className="search-field" placeholder="دنبال کدوم کسب و کاری؟" name="s" title="Search for" required />
+                                                                <input type="search" className="search-field ali" placeholder="دنبال کدوم کسب و کاری؟" name="s" title="Search for" required />
                                                             </div>
                                                             <div className="form-group form-group-2 ">
                                                                 <div className="group-select select-wrapper">
