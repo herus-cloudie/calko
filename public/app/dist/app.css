@@ -340,10 +340,22 @@
 }
 .header-dir{
   direction: ltr;
+  
+}
+.centerr{
+  text-align: center;
+}
+.dynamic-dir{
+  direction: rtl; 
+  text-align: justify;
+  font-size: 30px;
 }
 @media (min-width : 991px) {
   .header-dir{
     direction: rtl;
+  }
+  .dynamic-dir{
+    direction: ltr;
   }
 }
 .main-header .main-menu .navigation > li > a {
@@ -3219,13 +3231,13 @@
   margin-top: 90px;
 }
 .flat-why-choose2 .wrap-icon {
-  padding-right: 55px;
+  padding-left: 55px;
 }
 .flat-why-choose2 .wrap-icon .box {
   margin-bottom: 39px;
 }
 .flat-why-choose2 .wrap-icon .box .icon {
-  margin-right: 25px;
+  margin-left: 25px;
 }
 .flat-why-choose2 .wrap-icon .box .content {
   padding-top: 1px;

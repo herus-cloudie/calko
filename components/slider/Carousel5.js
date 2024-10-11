@@ -46,42 +46,42 @@ export default function Carousel5() {
                 <SwiperSlide>
                     <div className="slogan-logo">
                         <Link href="#">
-                            <img src="/assets/images/img-box/brand-1.png" alt="images" />
+                            <img src="/assets/immmg/g1.png" alt="images" />
                         </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slogan-logo">
                         <Link href="#">
-                            <img src="/assets/images/img-box/brand-2.png" alt="images" />
+                            <img src="/assets/immmg/g7.png" alt="images" />
                         </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slogan-logo">
                         <Link href="#">
-                            <img src="/assets/images/img-box/brand-3.png" alt="images" />
+                            <img src="/assets/immmg/g3.png" alt="images" />
                         </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slogan-logo">
                         <Link href="#">
-                            <img src="/assets/images/img-box/brand-4.png" alt="images" />
+                            <img src="/assets/immmg/g4.png" alt="images" />
                         </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slogan-logo">
                         <Link href="#">
-                            <img src="/assets/images/img-box/brand-5.png" alt="images" />
+                            <img src="/assets/immmg/g5.png" alt="images" />
                         </Link>
                     </div>
                 </SwiperSlide>
                 <SwiperSlide>
                     <div className="slogan-logo">
                         <Link href="#">
-                            <img src="/assets/images/img-box/brand-6.png" alt="images" />
+                            <img src="/assets/immmg/g6.png" alt="images" />
                         </Link>
                     </div>
                 </SwiperSlide>
