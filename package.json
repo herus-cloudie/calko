@@ -1,0 +1,32 @@
+{
+    "name": "name",
+    "version": "0.1.0",
+    "private": true,
+    "author": "author",
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "sass": "sass --watch public/app/scss/app.scss:public/app/dist/app.css"
+    },
+    "dependencies": {
+        "chart.js": "^4.4.0",
+        "eslint": "8.41.0",
+        "eslint-config-next": "13.4.3",
+        "leaflet": "^1.9.4",
+        "next": "13.4.3",
+        "react": "18.2.0",
+        "react-chartjs-2": "^5.2.0",
+        "react-countup": "^6.4.2",
+        "react-curved-text": "^2.0.2",
+        "react-dom": "18.2.0",
+        "react-leaflet": "^4.2.1",
+        "react-leaflet-markercluster": "^3.0.0-rc1",
+        "react-modal-video": "^2.0.1",
+        "react-scroll-trigger": "^0.6.14",
+        "sass": "^1.62.1",
+        "swiper": "^11.0.3",
+        "wowjs": "^1.1.3"
+    }
+}
