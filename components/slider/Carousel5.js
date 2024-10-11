@@ -81,10 +81,66 @@ export default function Carousel5() {
                 <SwiperSlide>
                     <div className="slogan-logo">
                         <Link href="#">
-                            <img src="/assets/immmg/g6.png" alt="images" />
+                            <img src="/assets/immmg/g7.png" alt="images" />
                         </Link>
                     </div>
                 </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g8.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g9.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide><SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g10.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g11.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g12.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g13.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g14.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide>
+                <SwiperSlide>
+                    <div className="slogan-logo">
+                        <Link href="#">
+                            <img src="/assets/immmg/g15.png" alt="images" />
+                        </Link>
+                    </div>
+                </SwiperSlide>
+
             </Swiper>
         </>
     )
