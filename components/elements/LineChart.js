@@ -21,7 +21,7 @@ function LineChart() {
                 fill: true,
                 label: `$ Sales Overview`,
                 backgroundColor: "rgba(255, 169, 32, 0.10)",
-                borderColor: "#FFA920",
+                borderColor: "#0D4AA3",
                 data: [0, 105, 92, 155, 138, 205, 120,92, 155, 138, 205, 320],
                 lineTension: 0,
                 pointRadius: 2,

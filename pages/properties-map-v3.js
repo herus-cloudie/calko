@@ -75,7 +75,7 @@ export default function PropertyMap3() {
                                         </div>
                                         <a className="icon-d icon-book">
                                             <svg width={14} height={14} viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.2626 1.93781C10.9042 2.01247 11.375 2.56606 11.375 3.21239V12.25L7 10.0625L2.625 12.25V3.21239C2.625 2.56606 3.09517 2.01247 3.73742 1.93781C5.90519 1.68618 8.09481 1.68618 10.2626 1.93781V1.93781Z" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M10.2626 1.93781C10.9042 2.01247 11.375 2.56606 11.375 3.21239V12.25L7 10.0625L2.625 12.25V3.21239C2.625 2.56606 3.09517 2.01247 3.73742 1.93781C5.90519 1.68618 8.09481 1.68618 10.2626 1.93781V1.93781Z" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                             {/* <i class="far fa-bookmark"></i> */}
                                         </a>
@@ -123,7 +123,7 @@ export default function PropertyMap3() {
                                         </div>
                                         <a className="icon-d icon-book">
                                             <svg width={14} height={14} viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.2626 1.93781C10.9042 2.01247 11.375 2.56606 11.375 3.21239V12.25L7 10.0625L2.625 12.25V3.21239C2.625 2.56606 3.09517 2.01247 3.73742 1.93781C5.90519 1.68618 8.09481 1.68618 10.2626 1.93781V1.93781Z" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M10.2626 1.93781C10.9042 2.01247 11.375 2.56606 11.375 3.21239V12.25L7 10.0625L2.625 12.25V3.21239C2.625 2.56606 3.09517 2.01247 3.73742 1.93781C5.90519 1.68618 8.09481 1.68618 10.2626 1.93781V1.93781Z" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                             {/* <i class="far fa-bookmark"></i> */}
                                         </a>
@@ -171,7 +171,7 @@ export default function PropertyMap3() {
                                         </div>
                                         <a className="icon-d icon-book">
                                             <svg width={14} height={14} viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M10.2626 1.93781C10.9042 2.01247 11.375 2.56606 11.375 3.21239V12.25L7 10.0625L2.625 12.25V3.21239C2.625 2.56606 3.09517 2.01247 3.73742 1.93781C5.90519 1.68618 8.09481 1.68618 10.2626 1.93781V1.93781Z" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                <path d="M10.2626 1.93781C10.9042 2.01247 11.375 2.56606 11.375 3.21239V12.25L7 10.0625L2.625 12.25V3.21239C2.625 2.56606 3.09517 2.01247 3.73742 1.93781C5.90519 1.68618 8.09481 1.68618 10.2626 1.93781V1.93781Z" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg>
                                             {/* <i class="far fa-bookmark"></i> */}
                                         </a>

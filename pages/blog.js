@@ -69,7 +69,7 @@ export default function Blog() {
                                                         <div className="meta">
                                                             <Link href="/blog-detail" className="btn-button flex align-center fs-13 fw-6 text-color-3"><span>Read more </span>
                                                                 <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                                 </svg>
                                                             </Link>
                                                         </div>
@@ -88,7 +88,7 @@ export default function Blog() {
                                                         <div className="meta">
                                                             <Link href="/blog-detail" className="btn-button flex align-center fs-13 fw-6 text-color-3"><span>Read more </span>
                                                                 <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                                 </svg>
                                                             </Link>
                                                         </div>
@@ -107,7 +107,7 @@ export default function Blog() {
                                                         <div className="meta">
                                                             <Link href="/blog-detail" className="btn-button flex align-center fs-13 fw-6 text-color-3"><span>Read more </span>
                                                                 <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                                 </svg>
                                                             </Link>
                                                         </div>
@@ -126,7 +126,7 @@ export default function Blog() {
                                                         <div className="meta">
                                                             <Link href="/blog-detail" className="btn-button flex align-center fs-13 fw-6 text-color-3"><span>Read more </span>
                                                                 <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                                 </svg>
                                                             </Link>
                                                         </div>
@@ -145,7 +145,7 @@ export default function Blog() {
                                                         <div className="meta">
                                                             <Link href="/blog-detail" className="btn-button flex align-center fs-13 fw-6 text-color-3"><span>Read more </span>
                                                                 <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                                 </svg>
                                                             </Link>
                                                         </div>
@@ -164,7 +164,7 @@ export default function Blog() {
                                                         <div className="meta">
                                                             <Link href="/blog-detail" className="btn-button flex align-center fs-13 fw-6 text-color-3"><span>Read more </span>
                                                                 <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                                 </svg>
                                                             </Link>
                                                         </div>
@@ -183,7 +183,7 @@ export default function Blog() {
                                                         <div className="meta">
                                                             <Link href="/blog-detail" className="btn-button flex align-center fs-13 fw-6 text-color-3"><span>Read more </span>
                                                                 <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                                    <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                                 </svg>
                                                             </Link>
                                                         </div>

@@ -273,7 +273,7 @@ export default function AgentDetails() {
                                             <Link className="sc-button btn-icon2 btn-1 one btn-svg center" href="/properties-grid">
                                                 <span>View all my listing</span>
                                                 <svg width={18} height={10} viewBox="0 0 14 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M10.5 1L13 3.5M13 3.5L10.5 6M13 3.5H1" stroke="#FFA920" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+                                                    <path d="M10.5 1L13 3.5M13 3.5L10.5 6M13 3.5H1" stroke="#0D4AA3" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                                 </svg>
                                             </Link>
                                         </div>
