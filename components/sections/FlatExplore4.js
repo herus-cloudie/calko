@@ -1,6 +1,7 @@
 
 
 import Link from 'next/link'
+import { useState } from 'react';
 
 
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
@@ -29,6 +30,10 @@ const swiperOptions = {
 };
 
 export default function FlatExplore4() {
+    const [activeIndex, setActiveIndex] = useState(1);
+    const handleOnClick = (index) => {
+        setActiveIndex(index);
+    };
     return (
         <>
             <section className="flat-explore tf-section">
@@ -39,6 +44,28 @@ export default function FlatExplore4() {
                                 <h2>Explore our listings</h2>
                                 <p className="text-color-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer vel lobortis justo</p>
                             </div>
+                            <div className="flat-tab taabs center hide-response">
+                                    <ul className="menu-tab tab-title flex justify-center">
+                                        <li className={activeIndex == 1 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="8 Property" onClick={() => handleOnClick(1)}>
+                                            <h5 className="inner">Houses</h5>
+                                        </li>
+                                        <li className={activeIndex == 2 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="6 Property" onClick={() => handleOnClick(2)}>
+                                            <h5 className="inner"> Smart home </h5>
+                                        </li>
+                                        <li className={activeIndex == 3 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="5 Property" onClick={() => handleOnClick(3)}>
+                                            <h5 className="inner ">Apartments</h5>
+                                        </li>
+                                        <li className={activeIndex == 4 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="7 Property" onClick={() => handleOnClick(4)}>
+                                            <h5 className="inner"> Office </h5>
+                                        </li>
+                                        <li className={activeIndex == 5 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="6 Property" onClick={() => handleOnClick(5)}>
+                                            <h5 className="inner">Villa</h5>
+                                        </li>
+                                        <li className={activeIndex == 6 ? "item-title hv-tool active" : "item-title hv-tool"} data-tooltip="3 Property" onClick={() => handleOnClick(6)}>
+                                            <h5 className="inner"> Bungalow </h5>
+                                        </li>
+                                    </ul>
+                                </div>
                             <div className="swiper-container carousel-8">
                                 <Swiper {...swiperOptions}>
                                     <SwiperSlide>

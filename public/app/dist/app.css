@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'yekan';
+  src: url('../../assets/fonts/iranyekanwebregular\(fanum\).ttf');
+}
 /**
   * Name: DreamHome - Real Estate HTML Template
   * Version: 1.0
@@ -22,7 +26,7 @@
 .header-account ul li {
   margin-right: 4px;
   font-weight: 700;
-  font-family: "Mulish", sans-serif;
+  font-family: "yekan";
 }
 .header-account ul li a:hover {
   color: #0D4AA3;
@@ -344,7 +348,7 @@
   padding: 28px 0px;
   letter-spacing: 0px;
   color: #120A21;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: capitalize;
   transition: all 500ms ease;
   -moz-transition: all 500ms ease;
@@ -947,7 +951,26 @@
   font-weight: 600;
   color: #120A21;
 }
-
+.hide-response{
+  margin-bottom: 40px;
+}
+.flat-bt-top{
+  display: none !important;
+} 
+@media (max-width : 768px) {
+  .hide-response{
+    display: none;
+  }
+}
+.taabs li {
+  position: relative;
+  line-height: 24px;
+  margin-right: 12.7px;
+  padding-bottom: 5px;
+  cursor: pointer;
+  padding: 8px 14px 8px 14px;
+  box-shadow: 0px 4px 18px 0px rgba(66, 71, 76, 0.1019607843);
+}
 .mobile-menu .navigation li.dropdown2 > ul li a {
   border-bottom: unset;
 }
@@ -8702,7 +8725,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "yekan";
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;

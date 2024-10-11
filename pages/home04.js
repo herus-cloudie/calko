@@ -17,7 +17,7 @@ export default function Home4() {
                 <Slider4 />
                 <FlatExplore4 />
                 <FlatDiscover4 />
-                <FlatSearchToday4 />
+                {/* <FlatSearchToday4 /> */}
                 <FlatSale4 />
                 <FlatWhyChoose4 />
                 <FlatContact4 />
