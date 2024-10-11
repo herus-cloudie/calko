@@ -281,7 +281,7 @@
                 cursor: pointer;
                 width: 115px;
                 height: 40px;
-                background-color: #fff5e0;
+                background-color: #FEE193;
                 @include flex-center;
                 @include transition3;
                 h4 {
@@ -459,7 +459,7 @@
         margin-top: 29px;
     }
     .swiper-pagination-bullet {
-        background: #fff5e0;
+        background: #FEE193;
         width: 50px;
         height: 4px;
         margin: 0 4px !important;
@@ -489,7 +489,7 @@
         margin-top: 35px;
     }
     .swiper-pagination-bullet1 {
-        background: #fff5e0;
+        background: #FEE193;
         width: 50px;
         height: 4px;
         margin: 0 4px !important;
@@ -542,7 +542,7 @@
         display: flex;
         justify-content: center;
         .owl-dot {
-            background: #fff5e0;
+            background: #FEE193;
             width: 50px;
             height: 4px;
             margin: 0 4px !important;
@@ -881,7 +881,7 @@
         .option {
             &:checked {
                 font-weight: 600;
-                color: #ffa920;
+                color: #0D4AA3;
             }
         }
     }

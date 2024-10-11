@@ -165,7 +165,7 @@
     }
   }
   .button-top {
-    background: #fff5e0;
+    background: #FEE193;
     span {
       color: $color-2;
       @include transition3;
@@ -204,7 +204,7 @@
       cursor: pointer;
       width: 112px;
       height: 54px;
-      background-color: #fff5e0;
+      background-color: #FEE193;
       @include flex-center;
       @include transition3;
       border-radius: 6px;
@@ -1275,7 +1275,7 @@
   align-items: center;
   transform: translate(-50%, -50%);
   height: 146px;
-  background-color: #fff5e0;
+  background-color: #FEE193;
   .curved-text {
     transform: rotate(-87deg);
     -moz-transform: rotate(-87deg);
@@ -1376,7 +1376,7 @@
     &::after {
       content: "";
       border: 7px solid transparent;
-      border-top-color: #ffa920;
+      border-top-color: #0D4AA3;
       position: absolute;
       bottom: -18px;
       left: 23px;
@@ -1418,7 +1418,7 @@
   background-image: url(./../../assets/images/section/bg-contact.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: #fff5e0;
+  background-color: #FEE193;
   padding: 28px 0 29px;
   .heading-section {
     margin-bottom: 0;
@@ -1656,7 +1656,7 @@
         border-radius: 50%;
         width: 112px;
         height: 112px;
-        border: 6px solid #fff5e0;
+        border: 6px solid #FEE193;
         box-shadow: 0px 20px 30px 0px #0000003d;
       }
     }
@@ -1749,7 +1749,7 @@
 
 // flat search today
 .flat-search-today {
-  background-color: #fff5e0;
+  background-color: #FEE193;
   .bg-images {
     background-image: url(./../../assets/images/section/bg-search-today.jpg);
     // background-attachment: fixed;
@@ -2325,7 +2325,7 @@
       top: 40px;
     }
     &:hover {
-      background-color: #fff5e0;
+      background-color: #FEE193;
     }
   }
   .content-right {
@@ -2722,7 +2722,7 @@
     .inner {
       flex-wrap: wrap;
       border-radius: 12px;
-      background-color: #fff5e0;
+      background-color: #FEE193;
       padding: 20px 21px 7px;
       margin-bottom: 31px;
       li {
@@ -2810,7 +2810,7 @@
   .icon-box {
     position: absolute;
     padding: 30px 15px 16px;
-    background-color: #fff5e0;
+    background-color: #FEE193;
     right: 65px;
     bottom: 1px;
     border-radius: 10px;
@@ -3297,7 +3297,7 @@
         @include flex-center;
       }
       canvas {
-        background: #fff5e0;
+        background: #FEE193;
         border-radius: 50%;
       }
       .progress-walk {
@@ -3719,7 +3719,7 @@
     border-bottom: 1px solid $color-5;
   }
   .text-box {
-    background-color: #fff5e0;
+    background-color: #FEE193;
     border-left: 4px solid $color-3;
     padding: 40px 40px 40px 36px;
     border-radius: 10px;
