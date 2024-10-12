@@ -301,11 +301,12 @@ export default function detail() {
                     </div>
 
                     <div dir="rtl" className="wrap-walksore wrap-style">
-                      <h3 className="titles">Walksore</h3>
-                      <div className="icon-p">
-                        58 Hullbrook Road, Billesley, B13 0LA
+                      <h3 className="titles">نشان های برتر</h3>
+                      <div className="">
+                        برترین ویژگی ها که {chosenData.title} را به آن میشناسند
                       </div>
-                      <div className="progress-box progress-box1 flex align-center">
+                      <div style={{display : 'flex' , justifyContent : 'space-between' , marginTop: '30px'}} className="progress-box progress-box1 flex align-center">
+                        <div>
                         <div className="progress-walk">
                           <div className="couter relative">
                             <div className="chart" data-percent={40}>
@@ -327,11 +328,10 @@ export default function detail() {
                           </div>
                         </div>
                         <div className="content">
-                          <h4>Walk score</h4>
-                          <div>60/100</div>
+                          <h4 style={{marginTop: '15px'}}>مشتری مداری</h4>
                         </div>
-                      </div>
-                      <div className="progress-box progress-box2 flex align-center">
+                        </div>
+                        <div>
                         <div className="progress-walk">
                           <div className="couter">
                             <div className="chart" data-percent={58}>
@@ -359,11 +359,10 @@ export default function detail() {
                           </div>
                         </div>
                         <div className="content">
-                          <h4>Bike score</h4>
-                          <div>42/100</div>
+                          <h4  style={{marginTop: '15px'}}>تخفیف های ارزنده</h4>
                         </div>
-                      </div>
-                      <div className="progress-box progress-box3 flex align-center">
+                        </div>
+                        <div>
                         <div className="progress-walk">
                           <div className="couter">
                             <div className="chart" data-percent={13}>
@@ -387,13 +386,16 @@ export default function detail() {
                           </div>
                         </div>
                         <div className="content">
-                          <h4>Metro score</h4>
-                          <div>87/100</div>
+                          <h4  style={{marginTop: '15px'}}>کیفیت بالای محصولات</h4>
+                        </div>
                         </div>
                       </div>
+                      
+
                     </div>
-                    <div className="wrap-nearby wrap-style">
-                      <h3 className="titles">What's nearby?</h3>
+
+                    <div dir="rtl" className="wrap-nearby wrap-style">
+                      <h3 className="titles">امتیازات کاربران</h3>
                       <div className="box-nearby box-1 flex">
                         <div className="icon flex-none">
                           <svg
@@ -414,14 +416,10 @@ export default function detail() {
                           </svg>
                         </div>
                         <div className="content">
-                          <h4>Education</h4>
+                          <h4>مجموع امتیازات و نظرات</h4>
                           <div className="title-box flex align-center justify-space">
-                            <div className="title-item">
-                              <span className="fw-7 font-2">8/10 </span>
-                              <span>
-                                Massachusetts Institute of Technology (MIT)
-                              </span>
-                              <span className="fw-7 font-2"> 1.5 miles</span>
+                            <div style={{margin : '0px !important'}} className="title-item">
+                              <span >ارسال</span>
                             </div>
                             <div className="start-item flex align-center">
                               <div className="star flex">
@@ -601,14 +599,12 @@ export default function detail() {
                                   <g />
                                 </svg>
                               </div>
-                              <p>(7 Reviews)</p>
+                              <p style={{marginRight : '10px'}}>79 نظر</p>
                             </div>
                           </div>
                           <div className="title-box flex align-center justify-space">
-                            <div className="title-item">
-                              <span className="fw-7 font-2">6/10 </span>
-                              <span>Stanford University</span>
-                              <span className="fw-7 font-2"> 2 miles</span>
+                            <div style={{margin : '0px !important'}} className="title-item">
+                              <span >کیفیت</span>
                             </div>
                             <div className="start-item flex align-center">
                               <div className="star flex">
@@ -788,14 +784,12 @@ export default function detail() {
                                   <g />
                                 </svg>
                               </div>
-                              <p>(2 Reviews)</p>
+                              <p style={{marginRight : '10px'}}>79 نظر</p>
                             </div>
                           </div>
                           <div className="title-box flex align-center justify-space">
-                            <div className="title-item">
-                              <span className="fw-7 font-2">5/10 </span>
-                              <span>University of Michigan-Ann Arbor</span>
-                              <span className="fw-7 font-2"> 3.5 miles</span>
+                            <div style={{margin : '0px !important'}} className="title-item">
+                              <span >پشتیبانی</span>
                             </div>
                             <div className="start-item flex align-center">
                               <div className="star flex">
@@ -975,418 +969,7 @@ export default function detail() {
                                   <g />
                                 </svg>
                               </div>
-                              <p>(3 Reviews)</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="box-nearby box-2 flex">
-                        <div className="icon flex-none">
-                          <svg
-                            width={30}
-                            height={30}
-                            viewBox="0 0 30 30"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <mask
-                              id="mask0_1532_28657"
-                              style={{ maskType: "luminance" }}
-                              maskUnits="userSpaceOnUse"
-                              x={0}
-                              y={0}
-                              width={30}
-                              height={30}
-                            >
-                              <path
-                                d="M0 8.7738e-05H29.9999V30H0V8.7738e-05Z"
-                                fill="white"
-                              />
-                            </mask>
-                            <g mask="url(#mask0_1532_28657)">
-                              <path
-                                d="M4.10364 11.9102C3.76034 11.5674 3.76034 11.0108 4.10364 10.6674C4.44647 10.3241 5.00311 10.3241 5.34641 10.6674L6.90617 12.2272V7.73771C6.90617 7.25197 7.29992 6.85881 7.78508 6.85881C8.27023 6.85881 8.66398 7.25197 8.66398 7.73771V9.29747L10.2237 7.73771C10.5672 7.39435 11.1238 7.39435 11.4665 7.73771C11.8099 8.08107 11.8099 8.63771 11.4665 8.98054L8.66398 11.7837V19.3423C11.9824 18.9612 14.6194 16.3915 15.3865 13.211C15.8493 11.2938 15.5927 9.30685 14.6235 7.30587C13.8853 5.78127 12.7556 4.2654 11.1701 2.67224C10.1646 1.6615 9.24347 0.848803 8.35461 0.187281C8.03093 -0.05723 7.59318 -0.0673084 7.25539 0.187281C6.36653 0.848803 5.44602 1.6615 4.43997 2.67224C2.85449 4.2654 1.72474 5.78127 0.986463 7.30587C0.0173255 9.30685 -0.239314 11.2938 0.223575 13.211C0.991737 16.3956 3.62177 18.9394 6.90617 19.3388V14.7133L4.10364 11.9102Z"
-                                fill="white"
-                              />
-                              <path
-                                d="M26.4843 24.3286H17.4615V22.5708H26.4843V24.3286ZM26.4843 28.2422H17.4615V26.0865H26.4843V28.2422ZM29.121 22.5708C29.6062 22.5708 29.9999 22.1771 29.9999 21.6919V18.1763C29.9999 17.6911 29.6062 17.2974 29.121 17.2974H14.8248C14.3396 17.2974 13.9459 17.6911 13.9459 18.1763V21.6919C13.9459 22.1771 14.3396 22.5708 14.8248 22.5708H15.7037V24.3286H14.8248C14.3394 24.3286 13.9459 24.7221 13.9459 25.2075C13.9459 25.693 14.3394 26.0864 14.8248 26.0864H15.7037V28.2422H8.66482V19.3423C8.08574 19.4091 7.4957 19.411 6.90701 19.3388V28.2422H0.878904C0.393514 28.2422 0 28.6356 0 29.1211C0 29.6065 0.393514 30 0.878904 30H29.121C29.6064 30 29.9999 29.6065 29.9999 29.1211C29.9999 28.6356 29.6064 28.2422 29.121 28.2422H28.2421V26.0864H29.121C29.6064 26.0864 29.9999 25.693 29.9999 25.2075C29.9999 24.7221 29.6064 24.3286 29.121 24.3286H28.2421V22.5708H29.121Z"
-                                fill="white"
-                              />
-                            </g>
-                          </svg>
-                        </div>
-                        <div className="content">
-                          <h4>Park</h4>
-                          <div className="title-box flex align-center justify-space">
-                            <div className="title-item">
-                              <span className="fw-7 font-2">8/10 </span>
-                              <span> The Wizarding World of Harry Potter </span>
-                              <span className="fw-7 font-2"> 4.5 miles</span>
-                            </div>
-                            <div className="start-item flex align-center">
-                              <div className="star flex">
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                              </div>
-                            </div>
-                          </div>
-                          <div className="title-box flex align-center justify-space">
-                            <div className="title-item">
-                              <span className="fw-7 font-2">7.5/10 </span>
-                              <span> Universal's Islands of Adventure </span>
-                              <span className="fw-7 font-2"> 6 miles</span>
-                            </div>
-                            <div className="start-item flex align-center">
-                              <div className="star flex">
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                                <svg
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  xmlnsXlink="http://www.w3.org/1999/xlink"
-                                  x="0px"
-                                  y="0px"
-                                  viewBox="0 0 512 512"
-                                  style={{
-                                    enableBackground: "new 0 0 512 512",
-                                  }}
-                                  xmlSpace="preserve"
-                                >
-                                  <g>
-                                    {" "}
-                                    <g>
-                                      {" "}
-                                      <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                    </g>
-                                  </g>
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                  <g />
-                                </svg>
-                              </div>
+                              <p style={{marginRight : '10px'}}>79 نظر</p>
                             </div>
                           </div>
                         </div>
@@ -1549,7 +1132,7 @@ export default function detail() {
                               />
                             </div>
                             <div className="content">
-                              <div className="title-item flex justify-space align-center">
+                              <div style={{margin : '0px !important'}} className="title-item flex justify-space align-center">
                                 <h4>Leslie Alexander</h4>
                                 <p className="fs-12 lh-18">April 5, 2023</p>
                               </div>
@@ -1797,7 +1380,7 @@ export default function detail() {
                               />
                             </div>
                             <div className="content">
-                              <div className="title-item flex justify-space align-center">
+                              <div style={{margin : '0px !important'}} className="title-item flex justify-space align-center">
                                 <h4>Jenny Wilson</h4>
                                 <p className="fs-12 lh-18">April 5, 2023</p>
                               </div>
@@ -2031,7 +1614,7 @@ export default function detail() {
                               />
                             </div>
                             <div className="content">
-                              <div className="title-item flex justify-space align-center">
+                              <div style={{margin : '0px !important'}} className="title-item flex justify-space align-center">
                                 <h4>Bessie Cooper</h4>
                                 <p className="fs-12 lh-18">April 5, 2023</p>
                               </div>
@@ -2555,7 +2138,7 @@ export default function detail() {
                       </div>
                       <div className="widget widget-listings style">
                         <h3 className="widget-title title-list">
-                          Featured listings
+                          اخبار روزانه
                         </h3>
                         <div className="box-listings flex hover-img3">
                           <div className="img-listings img-style3">
@@ -2568,10 +2151,11 @@ export default function detail() {
                             <Link
                               className="fs-16 lh-24"
                               href="/property-detail-v1"
+                              style={{marginRight : '10px'}}
                             >
-                              Gorgeous Apartment Building
+                              اغاز تخفیف ویژه اجیل فروشی دستچی
                             </Link>
-                            <h4>$7,500</h4>
+                            <h4 style={{marginRight : '10px'}}>ویژه آبان ماه</h4>
                           </div>
                         </div>
                         <div className="box-listings flex hover-img3">
@@ -2585,10 +2169,11 @@ export default function detail() {
                             <Link
                               className="fs-16 lh-24"
                               href="/property-detail-v1"
+                              style={{marginRight : '10px'}}
                             >
-                              Gorgeous Apartment Building
+                              اغاز تخفیف ویژه اجیل فروشی دستچی
                             </Link>
-                            <h4>$7,500</h4>
+                            <h4 style={{marginRight : '10px'}}>ویژه آبان ماه</h4>
                           </div>
                         </div>
                         <div className="box-listings flex hover-img3">
@@ -2602,10 +2187,11 @@ export default function detail() {
                             <Link
                               className="fs-16 lh-24"
                               href="/property-detail-v1"
+                              style={{marginRight : '10px'}}
                             >
-                              Gorgeous Apartment Building
+                              اغاز تخفیف ویژه اجیل فروشی دستچی
                             </Link>
-                            <h4>$7,500</h4>
+                            <h4 style={{marginRight : '10px'}}>ویژه آبان ماه</h4>
                           </div>
                         </div>
                       </div>
