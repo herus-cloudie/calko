@@ -7,6 +7,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRouter } from 'next/router'
 import { swiperData } from "@/constant";
+import { sp } from "@/utils/changeForamt";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],
@@ -1020,7 +1021,9 @@ export default function detail() {
                               <label className="fw-6">مبلغ اصلی کالا</label>
                               <input
                                 type="text"
-                                onChange={(e) => setCalculatorData({...calculatorData , cost : +e.target.value})}
+                                value={calculatorData.cost}
+                                on
+                                onChange={(e) => setCalculatorData({...calculatorData , cost : e.target.value})}
                                 className="my-input"
                                 name="text"
                                 placeholder="تومان"
@@ -1087,7 +1090,7 @@ export default function detail() {
                               </div>
                               <h3 className="text-color-3">
                                 {
-                                 paybackOutput().toFixed(0)
+                                 sp(paybackOutput().toFixed(0))
                                 }
                                  <span style={{marginRight : '5px'}}>تومان</span> </h3>
                             </div>
@@ -1095,7 +1098,7 @@ export default function detail() {
                               <div className="title-user fw-6">
                                 مبلغ پرداختی با سود کل
                               </div>
-                              <h3 className="text-color-3">{calculatorData.allCost} تومان</h3>
+                              <h3 className="text-color-3">{sp(calculatorData.allCost)} تومان</h3>
                             </div>
                             <button
                               onClick={calculatorFunc}
