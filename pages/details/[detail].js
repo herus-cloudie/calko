@@ -33,7 +33,13 @@ const swiperOptions = {
 export default function detail() {
   const router = useRouter();
   const chosenData = swiperData.find(({href}) => href == router.query.detail)
-
+  const [calculatorData, setCalculatorData] = useState({
+    cost : 0,
+    interestRate : 18,
+    allPaymentTime : .33,
+    paymentTimePeriod: 'monthly',
+    allCost : 0,
+  });
   const [isActive, setIsActive] = useState({
     status: false,
     key: 1,
@@ -51,10 +57,35 @@ export default function detail() {
       });
     }
   };
+
   const [activeIndex, setActiveIndex] = useState(1);
   const handleOnClick = (index) => {
     setActiveIndex(index);
   };
+  const calculatorFunc = (e) => {
+    e.preventDefault()
+    const mainInterestRate = calculatorData.interestRate * calculatorData.allPaymentTime;
+    const interestInPrice = (calculatorData.cost * mainInterestRate) / 100;
+    const allPrice = calculatorData.cost + interestInPrice;
+    setCalculatorData({...calculatorData , allCost : allPrice})
+  };
+
+  const paybackOutput = () => {
+    console.log(calculatorData)
+     if(calculatorData.paymentTimePeriod == 'monthly') {
+      console.log('monthly')
+      if(calculatorData.allPaymentTime == .33) return calculatorData.allCost / 4  
+      if(calculatorData.allPaymentTime == .5) return calculatorData.allCost / 6 
+      if(calculatorData.allPaymentTime == .1) return calculatorData.allCost / 12 
+      if(calculatorData.allPaymentTime == 1.5) return calculatorData.allCost / 18  
+      }else if(calculatorData.paymentTimePeriod == 'weekly') {
+        console.log('weekly')
+        if(calculatorData.allPaymentTime == .33) return calculatorData.allCost / (4 * 4.285) 
+        if(calculatorData.allPaymentTime == .5) return calculatorData.allCost / (6 * 4.285)
+        if(calculatorData.allPaymentTime == 1) return calculatorData.allCost /  (12 * 4.285)
+        if(calculatorData.allPaymentTime == 1.5) return calculatorData.allCost / (18 * 4.285) 
+      }else return calculatorData.allCost 
+  }
   return (
     <>
       <Layout
@@ -975,8 +1006,8 @@ export default function detail() {
                         </div>
                       </div>
                     </div>
-                    <div className="wrap-form wrap-style">
-                      <h3 className="titles">Loan caculator</h3>
+                    <div dir="rtl" className="wrap-form wrap-style">
+                      <h3 className="titles">ماشین حساب اقساط</h3>
                       <div className="comments">
                         <div className="respond-comment">
                           <form
@@ -986,91 +1017,93 @@ export default function detail() {
                             noValidate="novalidate"
                           >
                             <fieldset className>
-                              <label className="fw-6">Total price ($)</label>
+                              <label className="fw-6">مبلغ اصلی کالا</label>
                               <input
                                 type="text"
+                                onChange={(e) => setCalculatorData({...calculatorData , cost : +e.target.value})}
                                 className="my-input"
                                 name="text"
-                                placeholder="7,500"
-                                required
-                              />
-                            </fieldset>
-                            <fieldset className>
-                              <label className="fw-6">Down payment (%)</label>
-                              <input
-                                type="text"
-                                className="my-input"
-                                name="text"
-                                placeholder={0}
+                                placeholder="تومان"
                                 required
                               />
                             </fieldset>
                             <div className="wg-box">
-                              <label className="title-user fw-6">Terms</label>
-                              <select className="nice-select" tabIndex={0}>
-                                <span className="current">36 months</span>
-
-                                <option value={12} className="option">
-                                  12 months
+                              <label className="title-user fw-6">مدت بازپرداخت</label>
+                              <select onChange={(e) => setCalculatorData({...calculatorData , allPaymentTime : +e.target.value})} className="nice-select" tabIndex={0}>
+                                <span className="current">4 ماه</span>
+                                <option value={0.33} className="option">
+                                  4 ماه
                                 </option>
-                                <option value={36} className="option selected">
-                                  36 months
+                                <option value={0.5} className="option selected">
+                                  6 ماه
                                 </option>
-                                <option value={64} className="option">
-                                  64 months
+                                <option value={1} className="option">
+                                  12 ماه
                                 </option>
-                                <option value={100} className="option">
-                                  100 months
+                                <option value={1.5} className="option">
+                                  18 ماه
                                 </option>
                               </select>
                             </div>
                             <div className="inner-1 form-wg flex">
                               <div className="input-item wg-box ">
                                 <label className="title-user fw-6">
-                                  Interest rate (%)
+                                  نرخ سود (سالانه)
                                 </label>
                                 <input
+                                disabled
                                   type="text"
                                   className="my-input"
                                   name="text"
-                                  placeholder="1.5"
+                                  placeholder="18"
                                   required
                                 />
                               </div>
                               <div className="wg-box">
                                 <label className="title-user fw-6" />
                                 <div className="select-wrapper">
-                                  <select className="nice-select " tabIndex={0}>
-                                    <span className="current ">Monthly</span>
-
-                                    <option value="weekly" className="option">
-                                      Weekly
-                                    </option>
+                                  <select  onChange={(e) => setCalculatorData({...calculatorData , paymentTimePeriod : e.target.value})} className="nice-select " tabIndex={0}>
+                                    <span className="current ">ماهانه</span>
                                     <option
                                       value="monthly"
-                                      className="option"
-                                    >
-                                      Monthly
+                                      className="option">
+                                      ماهانه
                                     </option>
+                                    <option value="weekly" className="option">
+                                      هفتگی
+                                    </option>
+                                    
                                     <option value="annual" className="option">
-                                      Annual
+                                      سالانه
                                     </option>
                                   </select>
                                 </div>
                               </div>
                             </div>
+                            {/* 4.285 */}
                             <div className="inner-2 justify-space align-center flex">
                               <div className="title-user fw-6">
-                                Monthly payment
+                                اقساط {calculatorData.paymentTimePeriod == 'monthly' ? 'ماهانه' : calculatorData.paymentTimePeriod == 'weekly' ? 'هفتگی' : 'سالانه'}
                               </div>
-                              <h3 className="text-color-3">$125</h3>
+                              <h3 className="text-color-3">
+                                {
+                                 paybackOutput().toFixed(0)
+                                }
+                                 <span style={{marginRight : '5px'}}>تومان</span> </h3>
+                            </div>
+                            <div className="inner-2 justify-space align-center flex">
+                              <div className="title-user fw-6">
+                                مبلغ پرداختی با سود کل
+                              </div>
+                              <h3 className="text-color-3">{calculatorData.allCost} تومان</h3>
                             </div>
                             <button
+                              onClick={calculatorFunc}
                               className="sc-button"
                               name="submit"
                               type="submit"
                             >
-                              <span>Apply For A Loan</span>
+                              <span>محاسبه اقساط</span>
                             </button>
                           </form>
                         </div>
@@ -2195,369 +2228,8 @@ export default function detail() {
                           </div>
                         </div>
                       </div>
-                      <div className="widget widget-estate">
-                        <h3 className="widget-title title-news">
-                          Real estate near you
-                        </h3>
-                        <ul className="group-estate flex">
-                          <li className="box-estate hover-img2">
-                            <div className="thumb img-style2 ">
-                              <img
-                                className="img2"
-                                src="/assets/images/img-box/sidebar-estate-1.jpg"
-                                alt="images"
-                              />
-                            </div>
-                            <div className="content">
-                              <div className="title link-style-3 fw-6 lh-18">
-                                <Link href="/properties-map-v1">Moncton</Link>{" "}
-                              </div>
-                              <p className="fs-12 lh-16 text-color-1">
-                                1570 listing
-                              </p>
-                            </div>
-                          </li>
-                          <li className="box-estate hover-img2">
-                            <div className="thumb img-style2 ">
-                              <img
-                                className="img2"
-                                src="/assets/images/img-box/sidebar-estate-2.jpg"
-                                alt="images"
-                              />
-                            </div>
-                            <div className="content">
-                              <div className="title link-style-3 fw-6 lh-18">
-                                <Link href="/properties-map-v1">
-                                  Mississauga
-                                </Link>{" "}
-                              </div>
-                              <p className="fs-12 lh-16 text-color-1">
-                                1570 listing
-                              </p>
-                            </div>
-                          </li>
-                          <li className="box-estate hover-img2">
-                            <div className="thumb img-style2 ">
-                              <img
-                                className="img2"
-                                src="/assets/images/img-box/sidebar-estate-3.jpg"
-                                alt="images"
-                              />
-                            </div>
-                            <div className="content">
-                              <div className="title link-style-3 fw-6 lh-18">
-                                <Link href="/properties-map-v1">Halifax</Link>{" "}
-                              </div>
-                              <p className="fs-12 lh-16 text-color-1">
-                                1570 listing
-                              </p>
-                            </div>
-                          </li>
-                          <li className="box-estate hover-img2">
-                            <div className="thumb img-style2 ">
-                              <img
-                                className="img2"
-                                src="/assets/images/img-box/sidebar-estate-4.jpg"
-                                alt="images"
-                              />
-                            </div>
-                            <div className="content">
-                              <div className="title link-style-3 fw-6 lh-18">
-                                <Link href="/properties-map-v1">Ottawa</Link>{" "}
-                              </div>
-                              <p className="fs-12 lh-16 text-color-1">
-                                1570 listing
-                              </p>
-                            </div>
-                          </li>
-                          <li className="box-estate hover-img2">
-                            <div className="thumb img-style2 ">
-                              <img
-                                className="img2"
-                                src="/assets/images/img-box/sidebar-estate-5.jpg"
-                                alt="images"
-                              />
-                            </div>
-                            <div className="content">
-                              <div className="title link-style-3 fw-6 lh-18">
-                                <Link href="/properties-map-v1">Iqaluit</Link>{" "}
-                              </div>
-                              <p className="fs-12 lh-16 text-color-1">
-                                1570 listing
-                              </p>
-                            </div>
-                          </li>
-                          <li className="box-estate hover-img2">
-                            <div className="thumb img-style2 ">
-                              <img
-                                className="img2"
-                                src="/assets/images/img-box/sidebar-estate-6.jpg"
-                                alt="images"
-                              />
-                            </div>
-                            <div className="content">
-                              <div className="title link-style-3 fw-6 lh-18">
-                                <Link href="/properties-map-v1">Toronto</Link>{" "}
-                              </div>
-                              <p className="fs-12 lh-16 text-color-1">
-                                1570 listing
-                              </p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                      <div className="widget widget-ads">
-                        <div className="box-ads">
-                          <div className="content relative z-2">
-                            <h3 className="link-style-3">
-                              <Link href="/property-detail-v1">
-                                Gorgeous Apartment Building
-                              </Link>{" "}
-                            </h3>
-                            <div className="text-addres ">
-                              <p className="p-12 text-color-1 icon-p">
-                                58 Hullbrook Road, Billesley, B13 0LA
-                              </p>
-                            </div>
-                            <div className="star flex">
-                              <svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 512 512"
-                                style={{ enableBackground: "new 0 0 512 512" }}
-                                xmlSpace="preserve"
-                              >
-                                <g>
-                                  {" "}
-                                  <g>
-                                    {" "}
-                                    <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                  </g>
-                                </g>
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                              </svg>
-                              <svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 512 512"
-                                style={{ enableBackground: "new 0 0 512 512" }}
-                                xmlSpace="preserve"
-                              >
-                                <g>
-                                  {" "}
-                                  <g>
-                                    {" "}
-                                    <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                  </g>
-                                </g>
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                              </svg>
-                              <svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 512 512"
-                                style={{ enableBackground: "new 0 0 512 512" }}
-                                xmlSpace="preserve"
-                              >
-                                <g>
-                                  {" "}
-                                  <g>
-                                    {" "}
-                                    <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                  </g>
-                                </g>
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                              </svg>
-                              <svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 512 512"
-                                style={{ enableBackground: "new 0 0 512 512" }}
-                                xmlSpace="preserve"
-                              >
-                                <g>
-                                  {" "}
-                                  <g>
-                                    {" "}
-                                    <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                  </g>
-                                </g>
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                              </svg>
-                              <svg
-                                version="1.1"
-                                xmlns="http://www.w3.org/2000/svg"
-                                xmlnsXlink="http://www.w3.org/1999/xlink"
-                                x="0px"
-                                y="0px"
-                                viewBox="0 0 512 512"
-                                style={{ enableBackground: "new 0 0 512 512" }}
-                                xmlSpace="preserve"
-                              >
-                                <g>
-                                  {" "}
-                                  <g>
-                                    {" "}
-                                    <polygon points="512,197.816 325.961,185.585 255.898,9.569 185.835,185.585 0,197.816 142.534,318.842 95.762,502.431 			255.898,401.21 416.035,502.431 369.263,318.842 		" />{" "}
-                                  </g>
-                                </g>
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                                <g />
-                              </svg>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
                     </div>
                   </aside>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="flat-sale-detail flat-sale wg-dream wg-dots tf-section">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="heading-section ">
-                    <div className="title-heading fs-30 lh-45 fw-7">
-                      Featured properties
-                    </div>
-                    <p className="text-color-4">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Integer vel lobortis justo
-                    </p>
-                  </div>
-                  <div className="swiper-container2">
-                    <OneCarousel />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="flat-contact2 relative">
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="heading-section">
-                    <h2>
-                      Find for your dream home and increase your investment
-                      opportunities
-                    </h2>
-                    <p className="text-color-2 font-2">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce sed tristique metus proin id lorem odio
-                    </p>
-                    <div className="button-footer">
-                      <Link
-                        className="sc-button center btn-icon"
-                        href="/contact"
-                      >
-                        <svg
-                          width={24}
-                          height={24}
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M2.25 6.75C2.25 15.034 8.966 21.75 17.25 21.75H19.5C20.0967 21.75 20.669 21.5129 21.091 21.091C21.5129 20.669 21.75 20.0967 21.75 19.5V18.128C21.75 17.612 21.399 17.162 20.898 17.037L16.475 15.931C16.035 15.821 15.573 15.986 15.302 16.348L14.332 17.641C14.05 18.017 13.563 18.183 13.122 18.021C11.4849 17.4191 9.99815 16.4686 8.76478 15.2352C7.53141 14.0018 6.58087 12.5151 5.979 10.878C5.817 10.437 5.983 9.95 6.359 9.668L7.652 8.698C8.015 8.427 8.179 7.964 8.069 7.525L6.963 3.102C6.90214 2.85869 6.76172 2.6427 6.56405 2.48834C6.36638 2.33397 6.1228 2.25008 5.872 2.25H4.5C3.90326 2.25 3.33097 2.48705 2.90901 2.90901C2.48705 3.33097 2.25 3.90326 2.25 4.5V6.75Z"
-                            stroke="white"
-                            strokeWidth="1.5"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
-                        <span>Contact Seller</span>
-                      </Link>
-                    </div>
-                  </div>
-                  <div className="mark-img">
-                    <img
-                      src="/assets/images/mark/mark-contact2.png"
-                      alt="images"
-                    />
-                  </div>
                 </div>
               </div>
             </div>

@@ -113,7 +113,6 @@ export default function FlatDiscover4() {
                                             </SwiperSlide>
                                         )
                                     }
-                                    
                                 </Swiper>
                             </div>
                         </div>
