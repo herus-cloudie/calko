@@ -350,9 +350,23 @@
   text-align: justify;
   font-size: 30px;
 }
+.responsive-detail{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  flex-direction: row-reverse;
+}
 @media (min-width : 991px) {
   .header-dir{
     direction: rtl;
+  }
+  .responsive-detail{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 32px;
+    flex-direction: row-reverse;
   }
   .dynamic-dir{
     direction: ltr;
@@ -1305,13 +1319,6 @@
   height: 22px;
   background-color: rgba(255, 255, 255, 0.2);
   margin-left: -11px;
-  position: absolute;
-}
-.sc-button.btn-icon2 span::after {
-  content: "";
-  width: 1px;
-  height: 22px;
-  background-color: rgba(255, 255, 255, 0.2);
   position: absolute;
 }
 
@@ -4336,6 +4343,7 @@
   justify-content: space-between;
   margin-bottom: 40px;
 }
+
 .flat-property-detail .wrap-house .title-heading {
   margin-bottom: 14px;
 }
@@ -4347,15 +4355,15 @@
   margin-right: 15px;
 }
 .flat-property-detail .wrap-house .inner .sales {
-  padding: 6px, 8px, 6px, 8px;
+  padding: 10px;
   background-color: #6e55ff;
-  width: 62px;
+  min-width: 60px;
   height: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-  margin-right: 13px;
+  margin-left: 13px;
 }
 .flat-property-detail .wrap-house .inner .icon-inner .years-icon {
   margin-right: 10px;
@@ -8883,7 +8891,7 @@ input[type=url]::placeholder,
 input[type=search]::placeholder,
 input[type=tel]::placeholder,
 input[type=color]::placeholder {
-  font-family: "Poppins", sans-serif;
+  font-family: 'yekan';
   color: #120A21;
   line-height: 26px;
   font-size: 14px;
@@ -9757,7 +9765,7 @@ path {
   animation: box4 var(--duration) linear infinite;
 }
 .boxes .box > div {
-  --background: #0D4AA3;
+  --background: #0d4aa3b3;
   --top: auto;
   --right: auto;
   --bottom: auto;
@@ -9780,7 +9788,7 @@ path {
   --left: 0;
 }
 .boxes .box > div:nth-child(2) {
-  --background: #d38100;
+  --background: #f5cf08a8;
   --right: 0;
   --rotateY: 90deg;
 }
