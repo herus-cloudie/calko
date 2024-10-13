@@ -3275,7 +3275,7 @@
   background-color: #fff;
   padding: 30px 30px 30px 28px;
   border-radius: 10px;
-  height: 363px;
+  height: 230px;
 }
 .flat-icon .box:hover .icon svg {
   transform: rotateY(180deg);
@@ -3287,7 +3287,7 @@
   transition: all 0.8s ease;
 }
 .flat-icon .box .inner {
-  min-height: 190px;
+  min-height: 60px;
   padding-bottom: 11px;
   margin-bottom: 29px;
   border-bottom: 1px solid #E5E5EA;

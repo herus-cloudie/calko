@@ -30,10 +30,9 @@ export default function FlatIcon5() {
                                 <div className="content">
                                     <div className="inner">
                                         <h3>تصمیم بگیرید</h3>
-                                        <p className="font-2"> vel gravida arcu porttitor non. Vestibulum massa sapien, facilisis sed mattis id.</p>
                                     </div>
                                     <div className="meta style">
-                                        <Link href="#" className="btn-button flex align-center fw-6 text-color-2">
+                                        <Link  href="/contact" className="btn-button flex align-center fw-6 text-color-2">
                                             <i  className="far fa-long-arrow-alt-right fs-16" />
                                             <span>شروع روند</span>
                                         </Link>
@@ -53,11 +52,10 @@ export default function FlatIcon5() {
                                 <div className="content">
                                     <div className="inner">
                                         <h3>فرم تماس را تکمیل کنید</h3>
-                                        <p className="font-2"> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc congue metus ante,</p>
                                     </div>
                                     <div className="meta style">
-                                        <Link href="#" className="btn-button flex align-center fw-6 text-color-2">
-                                            <i className="far fa-long-arrow-alt-right fs-16" />
+                                        <Link  href="/contact" className="btn-button flex align-center fw-6 text-color-2">
+                                            <i  className="far fa-long-arrow-alt-right fs-16" />
                                             <span>شروع روند</span>
                                         </Link>
                                     </div>
@@ -78,11 +76,10 @@ export default function FlatIcon5() {
                                 <div className="content">
                                     <div className="inner">
                                         <h3>پای قرارداد بنشینید</h3>
-                                        <p className="font-2"> Fermentum ut erat. Fusce quis vestibulum felis. Maecenas sit amet ipsum sollicitudin.</p>
-                                    </div>
+                                        </div>
                                     <div className="meta style">
-                                        <Link href="#" className="btn-button flex align-center fw-6 text-color-2">
-                                            <i className="far fa-long-arrow-alt-right fs-16" />
+                                        <Link  href="/contact" className="btn-button flex align-center fw-6 text-color-2">
+                                            <i  className="far fa-long-arrow-alt-right fs-16" />
                                             <span>شروع روند</span>
                                         </Link>
                                     </div>

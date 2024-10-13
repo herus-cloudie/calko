@@ -47,8 +47,7 @@ export default function FlatWhyChoose4() {
                                     </div>
                                     <div className="content">
                                         <h4>دسترسی به صد ها سازمان و کسب و کار</h4>
-                                        <p className="text-color-2">The lists are always refreshed and updated constantly, you will never miss</p>
-                                        <div className="meta style">
+                                         <div className="meta style">
                                             <Link href="#" className="btn-button flex align-center fs-13 fw-6 text-color-2"><svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
                                             </svg><span>خواندن جزییات</span>
@@ -65,7 +64,6 @@ export default function FlatWhyChoose4() {
                                     </div>
                                     <div className="content">
                                         <h4>سیستم انتخاب هوشمند</h4>
-                                        <p className="text-color-2">Find the right house for you in the shortest amount of time</p>
                                         <div className="meta style">
                                             <Link href="#" className="btn-button flex align-center fs-13 fw-6 text-color-2"><svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                     <path d="M0.875 6H12.125M12.125 6L7.0625 0.9375M12.125 6L7.0625 11.0625" stroke="#000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
@@ -83,7 +81,6 @@ export default function FlatWhyChoose4() {
                                     </div>
                                     <div className="content">
                                         <h4>پشتیبانی همه جانبه</h4>
-                                        <p className="text-color-2">After-sales care service, helpful advice to avoid scams</p>
                                         <div className="meta style">
                                             <Link href="#" className="btn-button flex align-center fs-13 fw-6 text-color-2"> 
                                             <svg width={13} height={12} viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
