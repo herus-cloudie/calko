@@ -3238,6 +3238,9 @@
 }
 .flat-why-choose2 .wrap-icon {
   padding-left: 55px;
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
 }
 .flat-why-choose2 .wrap-icon .box {
   margin-bottom: 39px;
