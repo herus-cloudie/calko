@@ -45,31 +45,17 @@ export default function Footer1() {
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-12">
+                        <div dir="rtl" className="col-lg-3 col-md-6 col-12">
                             <div className="widget widget-info">
-                                <h3>Office Address</h3>
-                                <p className="sub-title">Head office:</p>
-                                <h5 className="text-color-1">2118 Thornridge Cir. Syracuse, Connecticut 35624</h5>
-                                <p className="sub-title">Branch:</p>
-                                <p className="text-1 text-color-8">3891 Ranchview Dr. Richardson, California 62639</p>
-                                <p className="text-2 text-color-8">3517 W. Gray St. Utica, Pennsylvania 57867</p>
+                                <h3>آدرس شرکت</h3>
+                                <p className="sub-title">دفتر اصلی</p>
+                                <h5 className="text-color-1">تهران، الهیه، خیابان مریم شرقی، پلاک 5</h5>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-12">
+                        <div dir="rtl" className="col-lg-3 col-md-6 col-12">
                             <div className="widget widget-menu style-2">
-                                <h3>Contact Seller</h3>
-                                <div className="box-icon flex align-center justify-space">
-                                    <div className="img-group flex align-center">
-                                        <div className="images flex-none">
-                                            <img src="/assets/images/author/author-footer.jpg" alt="images" />
-                                        </div>
-                                        <div className="content">
-                                            <p>Darrell Steward</p>
-                                            <Link href="/tel:012345678"><h5>(405) 555-0128</h5></Link>
-                                        </div>
-                                    </div>
-                                    <Link href="#" className="button-author"><i className="far fa-chevron-right" /></Link>
-                                </div>
+                                <h3>راه ارتباطی</h3>
+
                                 <div className="box-icon flex align-center">
                                     <div className="icon flex-none">
                                         <svg width={50} height={50} viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -80,8 +66,8 @@ export default function Footer1() {
                                         </svg>
                                     </div>
                                     <div className="content">
-                                        <p>Hotline:</p>
-                                        <Link href="/tel:012345678"><h5>(201) 555-0124</h5></Link>
+                                        <p>تلفن شرکت</p>
+                                        <Link href="/tel:012345678"><h5>021-44144000</h5></Link>
                                     </div>
                                 </div>
                                 <div className="box-icon flex align-center">
@@ -104,42 +90,41 @@ export default function Footer1() {
                                         </svg>
                                     </div>
                                     <div className="content">
-                                        <p>Email:</p>
-                                        <Link href="/mailto:Realestatecp@gmail.com"><h5 className="fw-4 text-color-8">Realestatecp@gmail.com</h5></Link>
+                                        <p>ایمیل</p>
+                                        <Link href="/mailto:Realestatecp@gmail.com"><h5 className="fw-4 text-color-8">saad-holding@gmail.com</h5></Link>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div className="col-lg-3 col-md-6 col-12">
+                        <div dir="rtl" className="col-lg-3 col-md-6 col-12">
                             <div className="widget widget-menu style-3 ">
-                                <h3>Our Company</h3>
+                                <h3>شرکت ما</h3>
                                 <ul className="box-menu">
-                                    <li><Link href="/properties-list">Property For Sale</Link></li>
-                                    <li><Link href="/about">About Us</Link></li>
-                                    <li><Link href="/agents">Our Agents</Link></li>
-                                    <li><Link href="/portfolio">FAQ</Link></li>
-                                    <li><Link href="/pricing">Pricing</Link></li>
-                                    <li><Link href="/contact">Contact Us</Link></li>
+                                    <li><Link href="/contact">درخواست همکاری</Link></li>
+                                    <li><Link href="/#">درباره‌ی ما</Link></li>
+                                    <li><Link href="/#">رسالت ما</Link></li>
+                                    <li><Link href="/#">سوالات پرتکرار</Link></li>
+                                    <li><Link href="/contact">ارتباط با ما</Link></li>
                                 </ul>
                             </div>
                         </div>
                         <div className="col-lg-3 col-md-6 col-12">
                             <div className="widget widget-menu widget-form">
-                                <h3>Newsletter</h3>
+                                <h3>صندوق انتقادات  و پیشنهادات</h3>
                                 <form method="post" className="comment-form form-submit" action="#" acceptCharset="utf-8">
-                                    <p className="font-2 text-color-8">Sign up to receive the latest articles</p>
+                                    <p className=" text-color-8">برای ارسال پیام اول ثبت نام کنید</p>
                                     <div className="text-wrap clearfix">
                                         <fieldset className="email-wrap style-text">
-                                            <input type="email" className="tb-my-input" name="email" placeholder="Your email address" required />
+                                            <input type="email" className="tb-my-input" name="email" placeholder="ایمیل" required />
                                         </fieldset>
                                     </div>
                                     <button name="submit" type="submit" className="button btn-submit-comment btn-1 btn-8">
-                                        <span>Sign Up</span>
+                                        <span>ثبت نام</span>
                                     </button>
                                     <label className="flex">
                                         <input type="checkbox" />
                                         <span className="btn-checkbox flex-two" />
-                                        <span className="fs-12 text-color-8 lh-18">I have read and agree to the terms &amp; conditions</span>
+                                        <span className="fs-12 text-color-8 lh-18">من قوانین را خوانده ام و آن را قبول دارم</span>
                                     </label>
                                 </form>
                             </div>

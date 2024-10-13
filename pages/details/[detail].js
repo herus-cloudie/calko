@@ -7,7 +7,7 @@ import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useRouter } from 'next/router'
 import { swiperData } from "@/constant";
-import { sp } from "@/utils/changeForamt";
+import { sp } from "@/util/changeForamt";
 
 const swiperOptions = {
   modules: [Autoplay, Pagination, Navigation],

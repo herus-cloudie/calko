@@ -25,7 +25,6 @@ export default function Home() {
                 <FlatWhyChoose4 />
                 <FlatBrand4 />
                 <FlatContact4 />
-                
                 <FlatBlog4 />
             </Layout>
         </>

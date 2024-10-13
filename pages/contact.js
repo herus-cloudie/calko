@@ -5,22 +5,21 @@ export default function Contact() {
   return (
     <>
       <Layout
-        headerStyle={1}
+        headerStyle={4}
         footerStyle={1}
-        breadcrumbTitle="Property Listing"
+        breadcrumbTitle="فرم همکاری"
       >
         <div>
           <section className="flat-contact  page-contact relative">
             <div className="container">
               <div className="row">
-                <div className="col-lg-6 col-md-7">
+                <div dir="rtl" className="col-lg-6 col-md-7">
                   <div className="heading-section">
-                    <h2 className="font-2 fw-8 ">
-                      We provide the most suitable and quality real estate.
+                    <h2 className=" fw-8 ">
+                      برای همکاری با کالکو فقط لازمه تا فرم پایین صفحه را تکمیل کنید
                     </h2>
-                    <p className="text-color-">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Fusce sed tristique metus proin id lorem odio
+                    <p className="text-color-1">
+                      کارشناسان ما در سریع ترین زمان ممکن با شما تماس خواهند گرفت
                     </p>
                   </div>
                   <div className="wrap-info">
@@ -53,10 +52,10 @@ export default function Contact() {
                           />
                         </svg>
                       </div>
-                      <div className="content">
-                        <h5 className="text-color-4">Office address</h5>
+                      <div className="content" style={{marginRight : '10px' , paddingRight : '10px'}}>
+                        <h5 className="text-color-4">آدرس شرکت</h5>
                         <h4 className="fw-4 text-color-">
-                          2715 Ash Dr. San Jose, South Dakota 83475
+                          تهران، الهیه، خیابان مریم شرقی، پلاک پنج
                         </h4>
                       </div>
                     </div>
@@ -99,11 +98,11 @@ export default function Contact() {
                           />
                         </svg>
                       </div>
-                      <div className="content">
-                        <h5 className="text-color-4">Request a call back</h5>
+                      <div className="content" style={{marginRight : '10px' , paddingRight : '10px'}}>
+                        <h5 className="text-color-4">شماره تماس </h5>
                         <Link href="/tel:0123456789">
-                          <h4 className="fw-8 font-2 fs-30 text-color-3 lh-37">
-                            314-555-0123
+                          <h4 className="fw-8  fs-30 text-color-3 lh-37">
+                            021-441440000
                           </h4>
                         </Link>
                       </div>
@@ -174,11 +173,11 @@ export default function Contact() {
                           </defs>
                         </svg>
                       </div>
-                      <div className="content">
-                        <h5 className="text-color-4">Email us</h5>
+                      <div className="content" style={{marginRight : '10px' , paddingRight : '10px'}}>
+                        <h5 className="text-color-4">ایمیل ما</h5>
                         <Link href="/info:hellosupport@gmail.com">
                           <h4 className="fw-4 text-color-3">
-                            hellosupport@gmail.com
+                            saad-holding@gmail.com
                           </h4>
                         </Link>
                       </div>
@@ -188,7 +187,7 @@ export default function Contact() {
                 <div className="col-lg-6 col-md-5">
                   <div className="images z-2 relative">
                     <img
-                      src="/assets/images/mark/mark-contact3.png"
+                      src="/assets/immmg/why-choose-home4.png"
                       alt="images"
                     />
                   </div>
@@ -203,7 +202,7 @@ export default function Contact() {
             <div className="container-fuild">
               <iframe
                 className="map-content"
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d90.47477022812872!3d23.77494577893369!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s"
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7302.453092836291!2d51.3890!3d35.6892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1627293157601!5m2!1svi!2s"
                 allowFullScreen
                 loading="lazy"
               />
@@ -216,11 +215,10 @@ export default function Contact() {
                   <div id="comments" className="comments bg-white">
                     <div className="heading-box center">
                       <div className="heading-title fs-30 fw-7 lh-45">
-                        Contact form
+                        فرم درخواست همکاری
                       </div>
                       <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Fusce sed tristique metus proin id lorem odio
+                        
                       </p>
                     </div>
                     <div className="respond-comment">
@@ -234,7 +232,7 @@ export default function Contact() {
                       >
                         <div className="text-wrap flex form-wg">
                           <fieldset className="info-box">
-                            <label className="fw-6">Your name</label>
+                            <label className="fw-6">نام کامل</label>
                             <input
                               type="text"
                               className="tb-my-input"
@@ -244,7 +242,7 @@ export default function Contact() {
                             />
                           </fieldset>
                           <fieldset className="info-box">
-                            <label className="fw-6">Email or phone</label>
+                            <label className="fw-6">ایمیل یا موبایل</label>
                             <input
                               type="email"
                               className="tb-my-input"
@@ -254,32 +252,29 @@ export default function Contact() {
                             />
                           </fieldset>
                           <div className="info-box">
-                            <label className="fw-6">Property type</label>
+                            <label className="fw-6">دسته بندی</label>
                             <div className="select-wrapper">
                               <select
                                 className="nice-select relative"
                                 tabIndex={0}
                               >
-                                <span className="current">Choose</span>
+                                <span className="current">صنعت بیمه</span>
 
                                 <option value className="option">
-                                  Choose
+                                صنعت بیمه
                                 </option>
                                 <option value="America" className="option">
-                                  Apartment
+                                  تفریحات
                                 </option>
                                 <option value="England" className="option">
-                                  House
-                                </option>
-                                <option value="VietNam" className="option">
-                                  Rent
+                                  لوازم خانگی
                                 </option>
                               </select>
                             </div>
                           </div>
                         </div>
                         <fieldset className="message-wrap">
-                          <label className="fw-6">Message</label>
+                          <label className="fw-6">متن پیام</label>
                           <textarea
                             id="comment-message"
                             name="message"
@@ -289,7 +284,7 @@ export default function Contact() {
                             aria-required="true"
                           />
                         </fieldset>
-                        <div className="button-boxs">
+                        <div className="button-boxs" style={{display : 'flex' , justifyContent : 'center'}}>
                           <button
                             className="sc-button btn-icon"
                             name="submit"
@@ -319,26 +314,11 @@ export default function Contact() {
                                 </clipPath>
                               </defs>
                             </svg>
-                            <span>Send request</span>
+                            <span>ارسال فرم همکاری</span>
                           </button>
                         </div>
                       </form>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          <section className="flat-brand tf-section center page-contact relative">
-            <div className="overlay" />
-            <div className="container">
-              <div className="row">
-                <div className="col-lg-12">
-                  <div className="title-section">
-                    <h5>Trusted by over 150+ major companies</h5>
-                  </div>
-                  <div className="swiper-container carousel-5">
-                    <Carousel5 />
                   </div>
                 </div>
               </div>

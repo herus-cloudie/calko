@@ -8,7 +8,11 @@ export default function Breadcrumb({ breadcrumbTitle , breadcrumbCategory}) {
                     <div className="row">
                         <div className="col-lg-12">
                             <div className="title-inner style">
-                                <div className="title-group fs-12"><Link className="home fw-6 text-color-3" href="/">صفحه اصلی</Link><Link className="home fw-6 text-color-3" href="/">{breadcrumbCategory}</Link><span>{breadcrumbTitle}</span></div>
+                                <div className="title-group fs-12">
+                                    <Link className="home fw-6 text-color-3" href="/">صفحه اصلی</Link>
+                                    {breadcrumbCategory && <Link className="home fw-6 text-color-3" href="/">{breadcrumbCategory}</Link>}
+                                    <span>{breadcrumbTitle}</span>
+                                </div>
                             </div>
                         </div>
                     </div>
