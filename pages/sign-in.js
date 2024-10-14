@@ -1,8 +1,26 @@
 import Layout from '@/components/layout/Layout'
 import Link from 'next/link';
-import React from 'react'
+import React, { useState } from 'react'
 
 const SignIn = () => {
+
+  const [state , setState] = useState({
+    email : '',
+    password : '',
+  });
+
+  const changeHandler = (e) => setState({...state , [e.target.name] : e.target.value});
+
+  const submitHandler = async () => {
+    const sendReq = await fetch('/' , {
+      method : 'POST',
+      body : JSON.stringify({state}),
+      headers : {"Content-type": "application/json"}
+    })
+    const data = await sendReq.json();
+    console.log(data)
+  };
+
   return (
     <Layout headerStyle={4} footerStyle={1} breadcrumbTitle={'ورود به حساب کاربری'}>
           <section>
@@ -12,21 +30,21 @@ const SignIn = () => {
                     
                     <div dir='rtl'> 
                       <div class="form__group field">
-                          <input type="input" class="form__field" placeholder="ایمیل" required=""/>
+                          <input dir='ltr' type="input" onChange={changeHandler} value={state.email} name='email' class="form__field" placeholder="ایمیل" required=""/>
                           <label for="name" class="form__label">ایمیل</label>
                       </div>
                     </div>
 
                     <div dir='rtl'> 
                       <div class="form__group field">
-                          <input type="input" class="form__field" placeholder="رمز عبور" required=""/>
-                          <label for="name" class="form__label">رمز عبور</label>
+                          <input dir='ltr' type="input" onChange={changeHandler} value={state.password} name='password' class="form__field" placeholder="رمز عبور" required=""/>
+                          <label for="name" class="form__label">رمزعبور</label>
                       </div>
                     </div>
                     <div style={{fontSize : '12px'}}>
                       <Link style={{color : 'blue'}} href="/sign-up"> ساخت اکانت </Link> <span> حساب کاربری ندارید؟  </span>
                     </div>
-                    <button class="button-p" data-text="Awesome">
+                    <button onClick={submitHandler} class="button-p" data-text="Awesome">
                         <span style={{lineHeight : '40px'}} class="actual-text">&nbsp;ورود&nbsp;</span>
                         <span style={{lineHeight : '40px'}} aria-hidden="true" class="hover-text">&nbsp;ورود&nbsp;</span>
                     </button>
@@ -37,4 +55,4 @@ const SignIn = () => {
   )
 }
 
-export default SignIn;
+export default SignIn;  
