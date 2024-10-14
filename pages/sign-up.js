@@ -1,32 +1,36 @@
 import Layout from '@/components/layout/Layout'
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import React, { useState } from 'react'
 
 const SignIn = () => {
-
+    const router = useRouter()
     const [state , setState] = useState({
         email : '',
-        name : '',
+        userName : '',
         password : '',
-        secondPassword : '',
+        password_confirmation : '',
         Err : ''
     });
 
     const changeHandler = (e) => setState({...state , [e.target.name] : e.target.value});
 
     const submitHandler = async () => {
-        if(state.password !== state.secondPassword) return setState({...state , Err : 'رمزهای عبور همخوانی ندارند'})
+        
         const sendReq = await fetch(`http://185.243.48.181:8093/api/v1/register` , {
             method : 'POST',
-            body : JSON.stringify({name : state.name , email : state.email , password : state.password}),
+            body : JSON.stringify({name : state.userName , email : state.email , password : state.password , password_confirmation : state.password_confirmation}),
             headers : {"Content-type": "application/json"}
         })
-        const data = await sendReq.json();
-        if(data.errors) setState({...state , Err : data.errors})
-        else setState({...state , Err : ''})
-        console.log(data)
+        const Data = await sendReq.json();
+
+        if(Data.errors) setState({...state , Err : Data.errors})
+        else {
+            setState({...state , Err : ''})
+            document.cookie = `${Data.data.access_token}; SameSite=None; Secure`
+            router.push('/')
+        }
     };
-    console.log(state.Err)
   return (
     <Layout headerStyle={4} footerStyle={1} breadcrumbTitle={'ایجاد حساب کاربری'}>
           <section>
@@ -42,7 +46,7 @@ const SignIn = () => {
                     </div>
                     <div dir='rtl'> 
                       <div class="form__group field">
-                          <input dir='ltr'  type="input" onChange={changeHandler} value={state.name} name='name' class="form__field" placeholder="نام کاربری" required=""/>
+                          <input dir='ltr'  type="input" onChange={changeHandler} value={state.userName} name='userName' class="form__field" placeholder="نام کاربری" required=""/>
                           <label for="name" class="form__label">نام کاربری</label>
                       </div>
                     </div>
@@ -54,7 +58,7 @@ const SignIn = () => {
                     </div>
                     <div dir='rtl'> 
                       <div class="form__group field">
-                          <input dir='ltr'  type="input" onChange={changeHandler} value={state.secondPassword} name='secondPassword' class="form__field" placeholder="رمز عبور" required=""/>
+                          <input dir='ltr'  type="input" onChange={changeHandler} value={state.password_confirmation} name='password_confirmation' class="form__field" placeholder="رمز عبور" required=""/>
                           <label for="name" class="form__label"> تکرار رمزعبور</label>
                       </div>
                     </div>
